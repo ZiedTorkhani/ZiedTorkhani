@@ -55,6 +55,7 @@ font-size: 1.75rem;
 font-size: 2rem;
 }
 
+
 /* Set side navigation styles */
 #sideNav {
 text-align: center;
@@ -137,4 +138,16 @@ align-items: center;
 section.resume-section {
 padding-top: 3rem;
 padding-bottom: 3rem;
+}
+
+  #sideNav .navbar-nav .nav-item .nav-link {
+  color: gold;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+}
+
+#sideNav {
+  background-color: darkblue;
 }
