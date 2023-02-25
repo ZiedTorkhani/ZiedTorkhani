@@ -1,14 +1,9 @@
+/* Set font families and base styles */
 body {
-  font-family: 'Open Sans', serif;
-  padding-top: 54px;
-  color: #868e96;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
+font-family: 'Open Sans', sans-serif;
+color: #343a40;
+margin: 0;
+padding: 0;
 }
 
 h1,
@@ -17,134 +12,129 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #343a40;
+font-family: 'Saira Extra Condensed', sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+margin-top: 0;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+font-size: 4rem;
+line-height: 1.2;
 }
 
 h2 {
-  font-size: 3.5rem;
+font-size: 2.5rem;
+line-height: 1.2;
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
+text-transform: uppercase;
+font-weight: 500;
+font-family: 'Saira Extra Condensed', sans-serif;
+font-size: 1.25rem;
 }
 
-.list-social-icons a {
-  color: #495057;
+/* Set social icons and list styles */
+.list-social-icons a,
+.list-icons .list-inline-item i {
+color: #495057;
+transition: color 0.2s ease;
 }
 
-.list-social-icons a:hover {
-  /*color: #BD5D38;*/
-  color: #134074;
-
+.list-social-icons a:hover,
+.list-icons .list-inline-item i:hover {
+color: #134074;
 }
 
 .list-social-icons a .fa-lg {
-  font-size: 1.75rem;
+font-size: 1.75rem;
 }
 
 .list-icons {
-  font-size: 3rem;
+font-size: 2rem;
 }
 
-.list-icons .list-inline-item i:hover {
-  /*color: #BD5D38;*/
-  color: #134074;
+/* Set side navigation styles */
+#sideNav {
+text-align: center;
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+width: 17rem;
+height: 100vh;
+background-color: #f8f9fa;
+z-index: 1000;
 }
 
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase;
+#sideNav .navbar-brand {
+display: flex;
+margin: auto auto 0;
+padding: 0.5rem;
 }
 
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
+#sideNav .navbar-brand .img-profile {
+max-width: 10rem;
+max-height: 10rem;
+border: 0.5rem solid rgba(255, 255, 255, 0.2);
+border-radius: 50%;
+object-fit: cover;
 }
 
+#sideNav .navbar-collapse {
+display: flex;
+align-items: flex-start;
+flex-grow: 0;
+width: 100%;
+margin-bottom: auto;
+}
+
+#sideNav .navbar-collapse .navbar-nav {
+flex-direction: column;
+width: 100%;
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item {
+display: block;
+margin-top: 0.5rem;
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+display: block;
+font-weight: 600;
+text-transform: uppercase;
+color: #343a40;
+padding: 0.5rem;
+transition: background-color 0.2s ease;
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+background-color: #134074;
+color: #fff;
+}
+
+/* Set resume section styles */
 section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+padding-top: 5rem;
+padding-bottom: 5rem;
 }
 
 section.resume-section .resume-item .resume-date {
-  min-width: none;
+min-width: 18rem;
 }
 
 @media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
+section.resume-section {
+min-height: 100vh;
+display: flex;
+align-items: center;
+}
 }
 
 @media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #134074 !important;
-}
-
-.text-primary {
-  color: #137074 !important;
-}
-
-a {
-  color: #134074;
-}
-
-a:hover, a:focus, a:active {
-  color: #13315C;
+section.resume-section {
+padding-top: 3rem;
+padding-bottom: 3rem;
 }
