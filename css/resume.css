@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   padding-top: 54px;
   color: #868e96;
 }
@@ -17,14 +17,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
+  font-family: "Saira Extra Condensed", serif;
+  font-weight: 600;
   text-transform: uppercase;
   color: #343a40;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 5.5rem;
 }
 
@@ -35,7 +35,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: "Saira Extra Condensed", serif;
   font-size: 1.35rem;
 }
 
@@ -46,7 +46,6 @@ h2 {
 .list-social-icons a:hover {
   /*color: #BD5D38;*/
   color: #134074;
-
 }
 
 .list-social-icons a .fa-lg {
@@ -135,16 +134,30 @@ section.resume-section .resume-item .resume-date {
 
 .bg-primary {
   background-color: #134074 !important;
+  /* background-color: #137074 !important; */
 }
 
 .text-primary {
-  color: #137074 !important;
+  /* color: #137074 !important; */
+  /* color: #134074; */
+  color: #343a40 !important;
 }
 
 a {
   color: #134074;
 }
 
-a:hover, a:focus, a:active {
-  color: #13315C;
+a:hover,
+a:focus,
+a:active {
+  color: #13315c;
+}
+
+.subheading.mb-3 {
+  margin-top: 1rem;
+}
+
+.definition_projet {
+  text-align: justify;
+  padding-bottom: 1rem;
 }
