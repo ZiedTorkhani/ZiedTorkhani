@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 54px;
   color: #868e96;
 }
@@ -133,8 +133,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #134074 !important;
-  /* background-color: #137074 !important; */
+/*  background-color: #134074 !important; */
+  background-color: #070d21 !important; 
 }
 
 .text-primary {
