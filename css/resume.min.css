@@ -58,7 +58,8 @@ h2 {
 
 .list-icons .list-inline-item i:hover {
   /*color: #BD5D38;*/
-  color: #134074;
+/*   color: #134074; */
+  color : #BD9E5E;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -142,7 +143,7 @@ section.resume-section .resume-item .resume-date {
 
 .text-primary {
   /* color: #137074 !important; */
-    color: #343a40 !important;
+    color: #2E394A !important;
 /*   color: #BD9E5E !important; */
 }
 
