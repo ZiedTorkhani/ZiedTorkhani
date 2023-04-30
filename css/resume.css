@@ -45,7 +45,8 @@ h2 {
 
 .list-social-icons a:hover {
   /*color: #BD5D38;*/
-  color: #134074;
+/*   color: #134074; */
+    color : #BD9E5E;
 }
 
 .list-social-icons a .fa-lg {
