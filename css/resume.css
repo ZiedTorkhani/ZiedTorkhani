@@ -125,6 +125,7 @@ section.resume-section .resume-item .resume-date {
   }
   section.resume-section .resume-item .resume-date {
     min-width: 12rem;
+    word-wrap: break-word;
   }
 }
 
