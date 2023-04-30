@@ -64,6 +64,7 @@ h2 {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+  color: #BD9E5E !important;
 }
 
 @media (min-width: 992px) {
@@ -135,15 +136,14 @@ section.resume-section .resume-item .resume-date {
 
 .bg-primary {
 /*  background-color: #134074 !important; */
-/*   background-color: #202a4d !important;  */
     background-color: #2E394A !important; 
  
 }
 
 .text-primary {
   /* color: #137074 !important; */
-  /*   color: #343a40 !important; */
-  color: #BD9E5E !important;
+    color: #343a40 !important;
+/*   color: #BD9E5E !important; */
 }
 
 a {
