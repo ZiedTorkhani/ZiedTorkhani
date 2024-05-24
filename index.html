@@ -2,29 +2,16 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Zied Torkhani</title>
-
-    <!-- Bootstrap core CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zied Torkhani - CV en ligne</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
-
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
         }
 
         .navbar {
@@ -46,13 +33,16 @@
         }
 
         .navbar-nav .nav-link {
-            padding: 0;
             color: white !important;
+            transition: color 0.3s;
         }
 
-        .header {
-            background: url('img/header-bg.jpg') no-repeat center center;
-            background-size: cover;
+        .navbar-nav .nav-link:hover {
+            color: #ffd700 !important;
+        }
+
+        header {
+            background: url('img/header-bg.jpg') no-repeat center center/cover;
             height: 100vh;
             color: white;
             text-align: center;
@@ -62,27 +52,39 @@
             flex-direction: column;
         }
 
-        .header h1 {
+        header h1 {
             font-size: 4rem;
             margin-bottom: 20px;
         }
 
-        .header p {
+        header p {
             font-size: 1.5rem;
         }
 
-        .resume-section {
+        header .btn {
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: #ffd700;
+            color: #001f3f;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header .btn:hover {
+            background-color: #001f3f;
+            color: #ffd700;
+        }
+
+        section {
             padding: 60px 0;
         }
 
-        .resume-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
+        .section-title {
             text-align: center;
+            margin-bottom: 40px;
             position: relative;
         }
 
-        .resume-section h2::after {
+        .section-title::after {
             content: '';
             width: 60px;
             height: 4px;
@@ -92,53 +94,72 @@
         }
 
         .resume-item {
-            margin-bottom: 40px;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .resume-item:hover {
+            transform: translateY(-10px);
         }
 
         .resume-item h3 {
-            font-size: 1.5rem;
             margin-bottom: 10px;
         }
 
         .resume-item .subheading {
-            font-size: 1.2rem;
+            color: #666;
             margin-bottom: 10px;
+        }
+
+        .resume-item .resume-date {
             color: #666;
+            font-size: 0.9rem;
         }
 
-        .resume-date {
-            font-size: 1rem;
-            color: #666;
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
         }
 
-        .list-inline-item .fa-stack {
-            transition: transform 0.3s;
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
 
-        .list-inline-item:hover .fa-stack {
-            transform: scale(1.2);
-        }
-
-        .btn-custom {
-            color: #fff;
-            background-color: #001f3f;
-            border-color: #001f3f;
-            border-radius: 50px;
+        .contact-form button {
             padding: 10px 20px;
-            transition: background-color 0.3s, border-color 0.3s;
+            background: #001f3f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
         }
 
-        .btn-custom:hover {
-            background-color: #001733;
-            border-color: #001733;
+        .contact-form button:hover {
+            background: #ffd700;
+            color: #001f3f;
         }
 
-        .list-inline-item .fa-stack {
-            transition: transform 0.3s;
+        .social-icons a {
+            color: #001f3f;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
         }
 
-        .list-inline-item:hover .fa-stack {
-            transform: scale(1.2);
+        .social-icons a:hover {
+            color: #ffd700;
         }
     </style>
 </head>
@@ -148,7 +169,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profil.jpeg" alt="">
+                <img src="img/profil.jpeg" alt="Profile Picture">
                 <span>Zied Torkhani</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -166,7 +187,7 @@
                         <a class="nav-link js-scroll-trigger" href="#education">Éducation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projets">Projets réalisés</a>
+                        <a class="nav-link js-scroll-trigger" href="#projects">Projets réalisés</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
@@ -175,384 +196,202 @@
                         <a class="nav-link js-scroll-trigger" href="#interests">Intérêts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#Bourses">Bourses et Distinctions</a>
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="header" id="page-top">
+    <header>
         <div class="container">
             <h1>Zied Torkhani</h1>
             <p>Expert en Logistique et Transformation Numérique</p>
-            <a href="#about" class="btn btn-custom js-scroll-trigger">En savoir plus</a>
+            <a href="#about" class="btn js-scroll-trigger">En savoir plus</a>
         </div>
     </header>
 
-    <div class="container-fluid p-0">
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
-            <div class="my-auto">
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
                 <h2>À propos de moi</h2>
-                <p>En tant qu'expert en logistique et en transformation numérique, j'ai acquis une solide expérience dans l'optimisation des opérations et des processus 
-                    d'affaires pour les entreprises de tous secteurs. Mon objectif est de répondre aux besoins uniques de mes clients en mettant en place des solutions 
-                    personnalisées. Ma spécialisation dans l'intégration des systèmes d'information 
-                    et des technologies innovantes me permet de rédiger des cahiers des charges, de sélectionner les meilleures solutions et d'accompagner 
-                    les clients tout au long du processus pour garantir une implémentation réussie. Mon savoir-faire en conception, réaménagement et optimisation des entrepôts et usines me permet d'améliorer les flux 
-                    de travail et de sélectionner les équipements les plus avancés pour assurer le succès à long terme de mes clients. Je suis également expérimenté 
-                    en automatisation, ce qui me permet de proposer des solutions innovantes pour optimiser davantage les processus de travail et améliorer 
-                    l'efficacité opérationnelle. Enfin, je suis constamment à la recherche des dernières tendances technologiques pour fournir les meilleures solutions 
-                    à mes clients.
-                </p>
-                <ul class="list-inline list-social-icons mb-0">
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/zied-torkhani/">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/ZiedTorkhani/ZiedTorkhani">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+            </div>
+            <p>En tant qu'expert en logistique et en transformation numérique, j'ai acquis une solide expérience dans l'optimisation des opérations et des processus d'affaires pour les entreprises de tous secteurs. Mon objectif est de répondre aux besoins uniques de mes clients en mettant en place des solutions personnalisées. Ma spécialisation dans l'intégration des systèmes d'information et des technologies innovantes me permet de rédiger des cahiers des charges, de sélectionner les meilleures solutions et d'accompagner les clients tout au long du processus pour garantir une implémentation réussie. Mon savoir-faire en conception, réaménagement et optimisation des entrepôts et usines me permet d'améliorer les flux de travail et de sélectionner les équipements les plus avancés pour assurer le succès à long terme de mes clients. Je suis également expérimenté en automatisation, ce qui me permet de proposer des solutions innovantes pour optimiser davantage les processus de travail et améliorer l'efficacité opérationnelle. Enfin, je suis constamment à la recherche des dernières tendances technologiques pour fournir les meilleures solutions à mes clients.</p>
+            <div class="social-icons text-center">
+                <a href="https://www.linkedin.com/in/zied-torkhani/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/ZiedTorkhani/ZiedTorkhani"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Expérience</h2>
+            </div>
+            <div class="resume-item">
+                <h3>Analyste Logistique</h3>
+                <div class="subheading">Institut d'Innovation en Logistique du Québec (InnovLOG) - Montréal</div>
+                <div class="resume-date">Septembre 2022 - Présent</div>
+                <ul>
+                    <li>Identification, définition, analyse et documentation des besoins et des exigences des entreprises en vue d'améliorer leur efficacité opérationnelle et leur rentabilité.</li>
+                    <li>Accompagnement des entreprises dans l'intégration de systèmes d'information et d'autres technologies, en rédigeant des cahiers des charges, en sélectionnant des systèmes et des fournisseurs et en assurant une gestion de projet efficace.</li>
+                    <li>Réalisation d'audits numériques pour évaluer les pratiques existantes et identifier les opportunités d'amélioration, en vue de proposer des solutions innovantes et personnalisées pour répondre aux besoins des entreprises.</li>
+                    <li>Élaboration de plans de transformation numérique pour aider les entreprises à exploiter pleinement les avantages offerts par les technologies numériques, en concevant des stratégies de mise en œuvre adaptées à leurs besoins et en fournissant un soutien continu tout au long du processus de transformation.</li>
+                    <li>Accompagnement des entreprises dans leur transformation numérique, en proposant des solutions adaptées et en travaillant en étroite collaboration avec les membres de l'équipe pour assurer une mise en œuvre efficace et réussie.</li>
+                    <li>Réaménagement des entrepôts en analysant les flux de marchandises et en identifiant les inefficacités, en vue de proposer des solutions innovantes pour améliorer la productivité et la rentabilité.</li>
+                    <li>Analyse des opérations logistiques de l'entreprise pour identifier les inefficacités et les points faibles, en proposant des solutions pour optimiser les processus et améliorer la performance globale de l'entreprise.</li>
                 </ul>
             </div>
-        </section>
-
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-            <div class="my-auto">
-                <h2>Expériences pertinentes</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Analyste Logistique</h3>
-                        <div class="subheading mb-3">Institut d'Innovation en Logistique du Québec (InnovLOG) - Montréal</div>
-                        <ul>
-                            <li>Identification, définition, analyse et documentation des besoins et des exigences des entreprises en vue d'améliorer leur efficacité opérationnelle et leur rentabilité.</li>
-                            <li>Accompagnement des entreprises dans l'intégration de systèmes d'information et d'autres technologies, en rédigeant des cahiers des charges, en sélectionnant des systèmes et des fournisseurs et en assurant une gestion de projet efficace.</li>
-                            <li>Réalisation d'audits numériques pour évaluer les pratiques existantes et identifier les opportunités d'amélioration, en vue de proposer des solutions innovantes et personnalisées pour répondre aux besoins des entreprises.</li>
-                            <li>Élaboration de plans de transformation numérique pour aider les entreprises à exploiter pleinement les avantages offerts par les technologies numériques, en concevant des stratégies de mise en œuvre adaptées à leurs besoins et en fournissant un soutien continu tout au long du processus de transformation.</li>
-                            <li>Accompagnement des entreprises dans leur transformation numérique, en proposant des solutions adaptées et en travaillant en étroite collaboration avec les membres de l'équipe pour assurer une mise en œuvre efficace et réussie.</li>
-                            <li>Réaménagement des entrepôts en analysant les flux de marchandises et en identifiant les inefficacités, en vue de proposer des solutions innovantes pour améliorer la productivité et la rentabilité.</li>
-                            <li>Analyse des opérations logistiques de l'entreprise pour identifier les inefficacités et les points faibles, en proposant des solutions pour optimiser les processus et améliorer la performance globale de l'entreprise.</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Septembre 2022 - À présent</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Professional de recherche</h3>
-                        <div class="subheading mb-3">Université Laval - Québec City</div>
-                        <ul>
-                            <li>Analyse de la situation actuelle et des processus de gestion de transport des patients de l'hôpital Sant'Orsola-Malpighi, le troisième plus grand hôpital en Italie, en vue d'identifier les lacunes et les opportunités d'amélioration.</li>
-                            <li>Traitement et analyse des données de transport des patients pour identifier les tendances, les modèles et les opportunités d'optimisation, en utilisant des outils et des techniques avancées d'analyse de données.</li>
-                            <li>Conception d'une solution de planification de transport des patients en temps réel, en s'appuyant sur les résultats de l'analyse et en proposant des solutions innovantes pour améliorer l'efficacité opérationnelle de l'hôpital.</li>
-                            <li>Développement de la solution en utilisant C++, en travaillant en étroite collaboration avec les membres de l'équipe pour garantir une mise en œuvre efficace et réussie.</li>
-                            <li>Rédaction d'un article scientifique pour présenter les résultats de la recherche, les approches utilisées et les avantages de la solution proposée, en vue de contribuer au développement de la communauté scientifique et de renforcer mon profil professionnel en tant qu'expert en analyse de données et en gestion des opérations.</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Février 2022 - Août 2022</span>
-                    </div>
-                </div>
+            <div class="resume-item">
+                <h3>Professional de recherche</h3>
+                <div class="subheading">Université Laval - Québec City</div>
+                <div class="resume-date">Février 2022 - Août 2022</div>
+                <ul>
+                    <li>Analyse de la situation actuelle et des processus de gestion de transport des patients de l'hôpital Sant'Orsola-Malpighi, le troisième plus grand hôpital en Italie, en vue d'identifier les lacunes et les opportunités d'amélioration.</li>
+                    <li>Traitement et analyse des données de transport des patients pour identifier les tendances, les modèles et les opportunités d'optimisation, en utilisant des outils et des techniques avancées d'analyse de données.</li>
+                    <li>Conception d'une solution de planification de transport des patients en temps réel, en s'appuyant sur les résultats de l'analyse et en proposant des solutions innovantes pour améliorer l'efficacité opérationnelle de l'hôpital.</li>
+                    <li>Développement de la solution en utilisant C++, en travaillant en étroite collaboration avec les membres de l'équipe pour garantir une mise en œuvre efficace et réussie.</li>
+                    <li>Rédaction d'un article scientifique pour présenter les résultats de la recherche, les approches utilisées et les avantages de la solution proposée, en vue de contribuer au développement de la communauté scientifique et de renforcer mon profil professionnel en tant qu'expert en analyse de données et en gestion des opérations.</li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="stages">
-            <div class="my-auto">
-                <h2>Stages</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Stagiaire en gestion de transport</h3>
-                        <div class="subheading mb-3">Université Laval - Québec City</div>
-                        <ul>
-                            <li>Étudier les algorithmes, les heuristiques et les autres solutions existantes de planification des itinéraires des véhicules de déneigement, afin de comprendre les meilleures pratiques en matière de planification de tournées.</li>
-                            <li>Développer une solution de planification et d'optimisation des tournées de véhicules de déneigement, en utilisant des techniques avancées d'optimisation et des outils informatiques spécialisés pour maximiser l'efficacité de l'opération de déneigement.</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Mai 2019 - Juillet 2019</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Stagiaire en gestion de stock</h3>
-                        <div class="subheading mb-3">Tiamed - Tunis</div>
-                        <ul>
-                            <li>Évaluer les besoins et les enjeux liés au système de gestion de stock actuel de l'entreprise, en identifiant les problèmes clés et les opportunités d'amélioration.</li>
-                            <li>Concevoir et développer un outil complémentaire personnalisé pour le système de gestion de stock actuel de l'entreprise, afin d'améliorer l'efficacité opérationnelle et de répondre aux besoins spécifiques de l'entreprise.</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Juillet 2018 - Septembre 2018</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Stagiaire en gestion de production</h3>
-                        <div class="subheading mb-3">Paris Confection - Sfax</div>
-                        <ul>
-                            <li>Étudier le processus de production actuel de l'entreprise pour identifier les inefficacités et les opportunités d'amélioration.</li>
-                            <li>Optimiser les chaînes de production en identifiant les goulets d'étranglement et en équilibrant les flux de travail.</li>
-                            <li>Développer et mettre en place un plan de production efficace pour répondre aux besoins de l'entreprise et améliorer la productivité.</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Juin 2017 - Juillet 2017</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-            <div class="my-auto">
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
                 <h2>Éducation</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Université Laval
-                            Maîtrise en sciences de l'administration - opérations et systèmes de décision (avec mémoire)</h3>
-                        <div class="subheading mb-3">Titre de mémoire : Développement des algorithmes dynamiques et stochastiques pour le problème de transport de patients dans hôpitaux</div>
-                        <div>Programme de maîtrise avec mémoire formant des spécialistes en opérations et systèmes de décision. 
-                            Il permet d'approfondir les connaissances dans des disciplines telles que l'aide à la décision, l'analyse multicritère, 
-                            la commande optimale stochastique, l'ingénierie des réseaux logistiques, 
-                            les systèmes de planification distribués et la modélisation d'entreprise, à travers des créneaux de recherche pertinents.
-                        </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">2020 - 2022</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Ecole Nationale d’Ingénieurs de Carthage
-                            Ingénieur Des Systèmes Industriels et Logistiques</h3>
-                        <div class="subheading mb-3">Ingénieur des Systèmes Industriels et Logistiques</div>
-                        <div>Formation en Génie  Des Systèmes Industriels et Logistiques au sein de l’ENICarthage.</div>
-                        <p>Ce programme de formation en génie industriel est conçu pour fournir aux étudiants les compétences nécessaires pour concevoir et 
-                            gérer des systèmes industriels et logistiques efficaces et durables. Les diplômés seront en mesure de développer des solutions 
-                            innovantes en tenant compte des aspects technologiques, managériaux, organisationnels et économiques. Les sujets abordés incluent 
-                            l'analyse de la chaîne d'approvisionnement, la planification et la gestion de la production, l'optimisation de la performance, 
-                            la gestion de projet, la modélisation et la simulation de systèmes, la conception de systèmes logistiques et la résolution de problèmes 
-                            complexes en milieu industriel. Ce programme est conçu pour préparer les étudiants à relever les défis de l'industrie 4.0 et de 
-                            l'économie mondiale en constante évolution.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">2016 - 2019</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Institut Préparatoire aux Etudes d’Ingénieurs Sfax</h3>
-                        <div class="subheading mb-3">Concours National PT</div>
-                        <p>Cycle préparatoire,<br>Rang 107,
-                            <br>Filière PT.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">2014 - 2016</span>
-                    </div>
-                </div>
-                <br><br>
-                <div class="resume-item d-flex flex-column flex-md-row">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Lycée 15 Novembre 1955 Sfax</h3>
-                        <div class="subheading mb-3">Baccalauréat</div>
-                        <p>Baccalauréat Technique,
-                            <br>Mention Très Bien.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">2014</span>
-                    </div>
-                </div>
             </div>
-        </section>
+            <div class="resume-item">
+                <h3>Université Laval</h3>
+                <div class="subheading">Maîtrise en sciences de l'administration - opérations et systèmes de décision (avec mémoire)</div>
+                <div class="resume-date">2020 - 2022</div>
+                <p>Titre de mémoire : Développement des algorithmes dynamiques et stochastiques pour le problème de transport de patients dans hôpitaux</p>
+            </div>
+            <div class="resume-item">
+                <h3>Ecole Nationale d’Ingénieurs de Carthage</h3>
+                <div class="subheading">Ingénieur Des Systèmes Industriels et Logistiques</div>
+                <div class="resume-date">2016 - 2019</div>
+                <p>Formation en Génie  Des Systèmes Industriels et Logistiques au sein de l’ENICarthage.</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projets">
-            <div class="my-auto">
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
                 <h2>Projets réalisés</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Projets d'audits numériques</h3>
-                        <div class="definition_projet">
-                            L'audit numérique est une évaluation approfondie et complète de l'écosystème numérique d'une entreprise.
-                            Son objectif est d'identifier les forces, les faiblesses et les opportunités en matière de technologie et de transformation numérique. 
-                            En déterminant le niveau de maturité numérique de l'entreprise, cet audit fournit une image précise de la situation actuelle 
-                            en termes de technologies numériques, de processus opérationnels et de culture organisationnelle. 
-                            Cela permet de concevoir une stratégie claire et précise pour la transformation numérique de l'entreprise.
-                        </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nombre de projets réalisés : 7</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Projets d'accompagnement pour la transformation numérique</h3>
-                        <div class="definition_projet">
-                            Les projets d'accompagnement pour la transformation numérique visent à soutenir les entreprises dans 
-                            leur adaptation aux changements technologiques rapides en élaborant des stratégies à long terme pour améliorer leur efficacité, 
-                            leur productivité et leur rentabilité. Ils impliquent de proposer des solutions personnalisées et de trouver 
-                            les meilleurs intégrateurs pour leur mise en place, tout en guidant les entreprises dans leur transition vers un environnement numérique. 
-                            Ces projets sont d'une importance cruciale, car ils permettent aux entreprises d'être plus compétitives sur le marché, 
-                            d'accroître leur chiffre d'affaires et d'améliorer leur image de marque.
-                        </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nombre de projets réalisés : 5</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Projets d'accompagnement en logistique</h3>
-                        <div class="definition_projet">
-                            Les projets d'accompagnement en logistique visent à aider les entreprises à améliorer leur chaîne d'approvisionnement et à optimiser leurs processus 
-                            logistiques. Ils impliquent d'analyser et d'identifier les points forts et les faiblesses de la chaîne d'approvisionnement de l'entreprise, et 
-                            de proposer des solutions adaptées pour accroître son efficacité et sa rentabilité. Les projets d'accompagnement en logistique peuvent également 
-                            inclure la mise en place de systèmes de gestion des stocks et d'outils de suivi des livraisons, ainsi que la recherche de partenaires logistiques 
-                            pour une meilleure coordination et une réduction des coûts de transport. Grâce à ces projets, j'ai aidé les entreprises à mieux contrôler leurs coûts logistiques, à améliorer leur service clientèle et à renforcer leur compétitivité sur le marché.
-                        </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nombre de projets réalisés : 9</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Projets d'accompagnement pour la conception et le réaménagement des entrepôts et des usines</h3>
-                        <div class="definition_projet">
-                            Les projets d'accompagnement pour la conception et le réaménagement des entrepôts et des usines sont des missions complexes qui nécessitent une grande 
-                            expertise en matière de logistique et de gestion d'entreprises. Ce type de projet implique la conception et la mise en œuvre de solutions sur mesure 
-                            pour optimiser les espaces de stockage, les flux de marchandises et les processus opérationnels. Mon expérience et mes compétences dans ce domaine me 
-                            permettent d'accompagner les entreprises dans toutes les étapes de leur projet, de la définition des besoins à la mise en place des solutions les plus 
-                            adaptées. Mon approche personnalisée et mes conseils stratégiques permettent aux entreprises de maximiser leur efficacité, leur productivité et leur 
-                            rentabilité, tout en réduisant les coûts et en améliorant leur image de marque. Grâce à mes projets de référence réussis dans ce domaine, 
-                            je suis capable de fournir des résultats concrets et mesurables pour aider les entreprises à atteindre leurs objectifs de croissance et de développement.
-                        </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Nombre de projets réalisés : 3</span>
-                    </div>
-                </div>
             </div>
-        </section>
+            <div class="resume-item">
+                <h3>Projets d'audits numériques</h3>
+                <div class="resume-date">Nombre de projets réalisés : 7</div>
+                <p>L'audit numérique est une évaluation approfondie et complète de l'écosystème numérique d'une entreprise. Son objectif est d'identifier les forces, les faiblesses et les opportunités en matière de technologie et de transformation numérique.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Projets d'accompagnement pour la transformation numérique</h3>
+                <div class="resume-date">Nombre de projets réalisés : 5</div>
+                <p>Les projets d'accompagnement pour la transformation numérique visent à soutenir les entreprises dans leur adaptation aux changements technologiques rapides en élaborant des stratégies à long terme pour améliorer leur efficacité, leur productivité et leur rentabilité.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Projets d'accompagnement en logistique</h3>
+                <div class="resume-date">Nombre de projets réalisés : 9</div>
+                <p>Les projets d'accompagnement en logistique visent à aider les entreprises à améliorer leur chaîne d'approvisionnement et à optimiser leurs processus logistiques.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Projets d'accompagnement pour la conception et le réaménagement des entrepôts et des usines</h3>
+                <div class="resume-date">Nombre de projets réalisés : 3</div>
+                <p>Les projets d'accompagnement pour la conception et le réaménagement des entrepôts et des usines sont des missions complexes qui nécessitent une grande expertise en matière de logistique et de gestion d'entreprises.</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-            <div class="my-auto">
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
                 <h2>Compétences</h2>
-
-                <div class="subheading mb-3">Langages de Programmation &amp; Outils</div>
-                <ul class="list-inline list-icons">
-                    <li class="list-inline-item">
-                        <i class="devicon-cplusplus-plain"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-c-plain"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-csharp-plain"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-oracle-original"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-mysql-plain"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-visualstudio-plain"></i>
-                    </li>
-                </ul>
-
-                <div class="subheading mb-3">Outils</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-check"></i>R</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>Visio</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>Arena</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>anyLogistix</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>AutoCAD</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>Matlab</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>Cplex</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>Latex</li>
-                </ul>
-
-                <div class="subheading mb-3">Compétences clés</div>
-                <ul class="fa-ul mb-0">
-                    <li><i class="fa-li fa fa-check"></i>Analyse des besoins et des exigences</li>
-                    <li><i class="fa-li fa fa-check"></i>Analyse de données</li>
-                    <li><i class="fa-li fa fa-check"></i>Optimisation des processus d'affaires</li>
-                    <li><i class="fa-li fa fa-check"></i>Conception et coordination de chaînes logistiques</li>
-                    <li><i class="fa-li fa fa-check"></i>Gestion de la relation client-fournisseur (CRM/SRM)</li>
-                    <li><i class="fa-li fa fa-check"></i>Logistique de la distribution</li>
-                    <li><i class="fa-li fa fa-check"></i>Gestion des stocks et approvisionnement</li>
-                    <li><i class="fa-li fa fa-check"></i>Planification de la demande et de la production</li>
-                    <li><i class="fa-li fa fa-check"></i>Systèmes d'information et ERP</li>
-                    <li><i class="fa-li fa fa-check"></i>Apprentissage automatique et intelligence artificielle</li>
-                    <li><i class="fa-li fa fa-check"></i>Communication et coordination interfonctionnelles</li>
-                    <li><i class="fa-li fa fa-check"></i>Résolution de problèmes et prise de décisions</li>
-                    <li><i class="fa-li fa fa-check"></i>Capacité à travailler sous pression et à gérer des projets simultanément</li>
-                </ul>
             </div>
-        </section>
+            <div class="subheading mb-3">Langages de Programmation &amp; Outils</div>
+            <ul class="list-inline list-icons">
+                <li class="list-inline-item">
+                    <i class="devicon-cplusplus-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-c-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-csharp-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-oracle-original"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-mysql-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-visualstudio-plain"></i>
+                </li>
+            </ul>
+            <div class="subheading mb-3">Outils</div>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <i class="fa-li fa fa-check"></i>R</li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>Visio</li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>Arena</li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>anyLogistix</li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>AutoCAD</li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>Matlab</li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>Cplex</li>
+                <li>
+                    <i class="fa-li fa fa-check"></i>Latex</li>
+            </ul>
+            <div class="subheading mb-3">Compétences clés</div>
+            <ul class="fa-ul mb-0">
+                <li><i class="fa-li fa fa-check"></i>Analyse des besoins et des exigences</li>
+                <li><i class="fa-li fa fa-check"></i>Analyse de données</li>
+                <li><i class="fa-li fa fa-check"></i>Optimisation des processus d'affaires</li>
+                <li><i class="fa-li fa fa-check"></i>Conception et coordination de chaînes logistiques</li>
+                <li><i class="fa-li fa fa-check"></i>Gestion de la relation client-fournisseur (CRM/SRM)</li>
+                <li><i class="fa-li fa fa-check"></i>Logistique de la distribution</li>
+                <li><i class="fa-li fa fa-check"></i>Gestion des stocks et approvisionnement</li>
+                <li><i class="fa-li fa fa-check"></i>Planification de la demande et de la production</li>
+                <li><i class="fa-li fa fa-check"></i>Systèmes d'information et ERP</li>
+                <li><i class="fa-li fa fa-check"></i>Apprentissage automatique et intelligence artificielle</li>
+                <li><i class="fa-li fa fa-check"></i>Communication et coordination interfonctionnelles</li>
+                <li><i class="fa-li fa fa-check"></i>Résolution de problèmes et prise de décisions</li>
+                <li><i class="fa-li fa fa-check"></i>Capacité à travailler sous pression et à gérer des projets simultanément</li>
+            </ul>
+        </div>
+    </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-            <div class="my-auto">
+    <section id="interests">
+        <div class="container">
+            <div class="section-title">
                 <h2>Intérêts</h2>
-                <p>En dehors de mon travail, j'ai un grand intérêt pour les nouvelles technologies et l'innovation. 
-                    Je suis également passionné par les voyages et les cultures étrangères, ce qui m'a permis de développer une ouverture d'esprit et une capacité à m'adapter à des environnements divers et variés. 
-                    Je suis également passionné par la cuisine et j'aime expérimenter de nouvelles recettes et techniques culinaires. 
-                    Enfin, je suis un grand amateur de sport et je m'intéresse de plus en plus à la science de la nutrition pour optimiser mes résultats de gym. 
             </div>
-        </section>
+            <p>En dehors de mon travail, j'ai un grand intérêt pour les nouvelles technologies et l'innovation. Je suis également passionné par les voyages et les cultures étrangères, ce qui m'a permis de développer une ouverture d'esprit et une capacité à m'adapter à des environnements divers et variés. Je suis également passionné par la cuisine et j'aime expérimenter de nouvelles recettes et techniques culinaires. Enfin, je suis un grand amateur de sport et je m'intéresse de plus en plus à la science de la nutrition pour optimiser mes résultats de gym.</p>
+        </div>
+    </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Bourses">
-            <div class="my-auto">
-                <h2>Bourses et distinctions</h2>
-                <h3 class="mb-0">Tableau d’honneur de la faculté des études supérieures et postdoctorales (FESP)</h3>
-                <div class="subheading mb-3">Université Laval - 2022</div>
-                <ul>
-                    <li>Pour l’excellence de mes résultats scolaires et de mon mémoire.</li>
-                </ul>
-                <h3 class="mb-0">Lauréat - Bourse spéciale d'excellence</h3>
-                <div class="subheading mb-3">Université Laval - 2022</div>
-                <ul>
-                    <li>Pour l'excellence du dossier académique et la créativité et l'innovation dans la recherche.</li>
-                </ul>
-                <h3 class="mb-0">Bourse de département</h3>
-                <div class="subheading mb-3">FSA - Université Laval - 2022</div>
-                <ul>
-                    <li>Pour l'excellence du dossier académique et l'avancement dans le projet de recherche.</li>
-                </ul>
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
             </div>
-        </section>
-    </div>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
