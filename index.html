@@ -178,6 +178,25 @@
             color: #001f3f;
         }
 
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list li {
+            margin: 10px;
+            list-style: none;
+            padding: 10px 20px;
+            background: #f4f4f4;
+            border-radius: 4px;
+        }
+
+        .skills-list i {
+            margin-right: 10px;
+            color: #001f3f;
+        }
+
         .skills-section {
             display: flex;
             flex-wrap: wrap;
@@ -230,25 +249,14 @@
             background: #f4f4f4;
             padding: 10px 20px;
             border-radius: 4px;
-        }
-
-        .progress {
-            height: 20px;
-            background-color: #f4f4f4;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .progress-bar {
-            height: 100%;
-            background-color: #001f3f;
-            transition: width 0.6s ease;
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: bold;
+        }
+
+        .professional-skills ul li i {
+            margin-right: 10px;
+            color: #001f3f;
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -483,66 +491,33 @@
                     <i class="fa fa-lightbulb-o"></i>
                     <h3>Veille technologique</h3>
                 </div>
+                <div class="skill-card">
+                    <i class="fa fa-cloud"></i>
+                    <h3>ERP Systems</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa fa-users"></i>
+                    <h3>CRM Systems</h3>
+                </div>
             </div>
             <div class="professional-skills">
                 <h4>Compétences professionnelles</h4>
                 <ul>
-                    <li>Analyse des besoins et des exigences</li>
-                    <li>Analyse de données</li>
-                    <li>Optimisation des processus d'affaires</li>
-                    <li>Conception et coordination de chaînes logistiques</li>
-                    <li>Gestion de la relation client-fournisseur (CRM/SRM)</li>
-                    <li>Logistique de la distribution</li>
-                    <li>Gestion des stocks et approvisionnement</li>
-                    <li>Planification de la demande et de la production</li>
-                    <li>Systèmes d'information et ERP</li>
-                    <li>Apprentissage automatique et intelligence artificielle</li>
-                    <li>Communication et coordination interfonctionnelles</li>
-                    <li>Résolution de problèmes et prise de décisions</li>
-                    <li>Capacité à travailler sous pression et à gérer des projets simultanément</li>
-                    <li>Gestion de projets</li>
+                    <li><i class="fa fa-search"></i> Analyse des besoins et des exigences</li>
+                    <li><i class="fa fa-bar-chart"></i> Analyse de données</li>
+                    <li><i class="fa fa-line-chart"></i> Optimisation des processus d'affaires</li>
+                    <li><i class="fa fa-cogs"></i> Conception et coordination de chaînes logistiques</li>
+                    <li><i class="fa fa-users"></i> Gestion de la relation client-fournisseur (CRM/SRM)</li>
+                    <li><i class="fa fa-truck"></i> Logistique de la distribution</li>
+                    <li><i class="fa fa-archive"></i> Gestion des stocks et approvisionnement</li>
+                    <li><i class="fa fa-calendar"></i> Planification de la demande et de la production</li>
+                    <li><i class="fa fa-cloud"></i> Systèmes d'information et ERP</li>
+                    <li><i class="fa fa-brain"></i> Apprentissage automatique et intelligence artificielle</li>
+                    <li><i class="fa fa-comments"></i> Communication et coordination interfonctionnelles</li>
+                    <li><i class="fa fa-lightbulb-o"></i> Résolution de problèmes et prise de décisions</li>
+                    <li><i class="fa fa-tachometer"></i> Capacité à travailler sous pression et à gérer des projets simultanément</li>
+                    <li><i class="fa fa-tasks"></i> Gestion de projets</li>
                 </ul>
-            </div>
-            <div class="skills-progress">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;">C++</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;">C</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%;">C#</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%;">Java</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%;">SQL</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 65%;">R</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%;">Visio</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 55%;">anyLogistix</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%;">AutoCAD</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 45%;">Cplex</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 40%;">Latex</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 35%;">Jira</div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 30%;">Veille technologique</div>
-                </div>
             </div>
         </div>
     </section>
