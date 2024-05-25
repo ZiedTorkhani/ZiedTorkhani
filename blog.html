@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Zied Torkhani</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(0, 31, 63, 0.9);
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+
+        .navbar-nav .nav-item {
+            padding: 0 15px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffd700 !important;
+        }
+
+        header {
+            background: url('img/blog-header-bg.jpg') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        .article-title {
+            margin-top: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .article-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: #001f3f;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .article-content {
+            margin-bottom: 60px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">
+                <img src="img/profil.jpeg" alt="Profile Picture">
+                <span>Zied Torkhani</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#experience">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#education">Éducation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#projects">Projets réalisés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#interests">Intérêts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="article-title">
+            <h2>Les Systèmes d’Information</h2>
+        </div>
+        <div class="article-content">
+            <p>Les systèmes d’information (SI) sont au cœur de la transformation numérique des entreprises modernes. Ils permettent de collecter, traiter, stocker et diffuser l’information de manière efficace et sécurisée. Les SI sont essentiels pour optimiser les processus métiers, améliorer la prise de décision et renforcer la compétitivité des entreprises.</p>
+            
+            <h2>Qu'est-ce qu'un Système d'Information ?</h2>
+            <p>Un système d’information est un ensemble organisé de ressources (matériel, logiciel, personnel, données, procédures) permettant de collecter, stocker, traiter et communiquer des informations. Il supporte les activités de gestion et les processus opérationnels de l’entreprise. Les SI comprennent notamment les systèmes de gestion de base de données, les systèmes de planification des ressources d'entreprise (ERP), les systèmes de gestion de la relation client (CRM) et les systèmes de gestion des ressources humaines (HRMS).</p>
+            
+            <h2>Les Avantages des Systèmes d’Information</h2>
+            <p>Les systèmes d’information offrent de nombreux avantages aux entreprises :</p>
+            <ul>
+                <li><strong>Automatisation des tâches :</strong> Les SI permettent d’automatiser de nombreuses tâches répétitives, libérant ainsi du temps pour des activités à plus forte valeur ajoutée.</li>
+                <li><strong>Amélioration de la prise de décision :</strong> En fournissant des informations précises et en temps réel, les SI facilitent la prise de décision basée sur des données fiables.</li>
+                <li><strong>Optimisation des processus :</strong> Les SI permettent de modéliser, suivre et optimiser les processus métiers, améliorant ainsi l'efficacité opérationnelle.</li>
+                <li><strong>Gestion des données :</strong> Les SI offrent des capacités avancées de gestion et d'analyse des données, permettant aux entreprises de mieux comprendre leur environnement et de prédire les tendances futures.</li>
+                <li><strong>Communication et collaboration :</strong> Les SI facilitent la communication et la collaboration entre les différents départements de l’entreprise, ainsi qu’avec les partenaires externes.</li>
+            </ul>
+            
+            <h2>Les Défis des Systèmes d’Information</h2>
+            <p>Malgré leurs nombreux avantages, les systèmes d’information présentent également certains défis :</p>
+            <ul>
+                <li><strong>Sécurité :</strong> La protection des données sensibles est un enjeu majeur pour les SI. Les entreprises doivent mettre en place des mesures de sécurité robustes pour protéger leurs informations.</                li>
+                <li><strong>Coût :</strong> L’implémentation et la maintenance des SI peuvent représenter un investissement important pour les entreprises.</li>
+                <li><strong>Complexité :</strong> Les SI peuvent être complexes à mettre en œuvre et à intégrer avec les systèmes existants. Une planification minutieuse et une gestion rigoureuse des projets sont nécessaires pour garantir leur succès.</li>
+                <li><strong>Formation :</strong> Les utilisateurs doivent être formés pour utiliser efficacement les SI, ce qui peut nécessiter du temps et des ressources supplémentaires.</li>
+            </ul>
+            
+            <p>En conclusion, les systèmes d’information sont des outils puissants pour les entreprises, leur permettant d’améliorer leur efficacité opérationnelle, de prendre des décisions éclairées et de rester compétitives dans un environnement en constante évolution. Cependant, leur mise en œuvre nécessite une attention particulière aux aspects de sécurité, de coût, de complexité et de formation.</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
 
