@@ -178,25 +178,6 @@
             color: #001f3f;
         }
 
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .skills-list li {
-            margin: 10px;
-            list-style: none;
-            padding: 10px 20px;
-            background: #f4f4f4;
-            border-radius: 4px;
-        }
-
-        .skills-list i {
-            margin-right: 10px;
-            color: #001f3f;
-        }
-
         .skills-section {
             display: flex;
             flex-wrap: wrap;
@@ -249,6 +230,25 @@
             background: #f4f4f4;
             padding: 10px 20px;
             border-radius: 4px;
+        }
+
+        .progress {
+            height: 20px;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #001f3f;
+            transition: width 0.6s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -502,6 +502,47 @@
                     <li>Capacité à travailler sous pression et à gérer des projets simultanément</li>
                     <li>Gestion de projets</li>
                 </ul>
+            </div>
+            <div class="skills-progress">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;">C++</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;">C</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;">C#</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;">Java</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;">SQL</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;">R</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;">Visio</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 55%;">anyLogistix</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;">AutoCAD</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 45%;">Cplex</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;">Latex</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 35%;">Jira</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 30%;">Veille technologique</div>
+                </div>
             </div>
         </div>
     </section>
