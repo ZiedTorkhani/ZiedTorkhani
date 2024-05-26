@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zied Torkhani - CV en ligne</title>
+    <title>Zied Torkhani - Expert en Logistique et Transformation Numérique</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -258,6 +258,34 @@
             color: #001f3f;
             font-size: 1.5rem;
         }
+
+        .services-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .service-card {
+            flex: 1 1 300px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            color: #001f3f;
+        }
+
+        .service-card p {
+            color: #666;
+        }
     </style>
 </head>
 
@@ -288,6 +316,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#testimonials">Témoignages</a>
@@ -518,6 +549,32 @@
                     <li><i class="fa fa-tachometer"></i> Capacité à travailler sous pression et à gérer des projets simultanément</li>
                     <li><i class="fa fa-tasks"></i> Gestion de projets</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Services</h2>
+            </div>
+            <div class="skills-section">
+                <div class="service-card">
+                    <h3>Optimisation des processus</h3>
+                    <p>J'améliore les flux de travail et augmente l'efficacité en identifiant les points de blocage et en proposant des solutions pratiques.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Sélection et implémentation de logiciels</h3>
+                    <p>Aide à la sélection et implémentation des meilleurs logiciels de gestion pour ERP, MES, APS, CRM.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Développement sur mesure</h3>
+                    <p>Aide au développement d'ERP, TMS, WMS sur mesure, en accompagnant la phase de conception et de test.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Audit numérique</h3>
+                    <p>Réalisation d'audits numériques pour évaluer l'écosystème technologique de votre entreprise et proposer des améliorations.</p>
+                </div>
             </div>
         </div>
     </section>
