@@ -12,6 +12,7 @@
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
+            background-color: #f8f9fa;
         }
 
         .navbar {
@@ -90,16 +91,62 @@
             margin-bottom: 20px;
         }
 
-        .infographic {
-            text-align: center;
-            margin: 40px 0;
+        .info-block {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .infographic img {
-            max-width: 100%;
-            height: auto;
+        .info-block h3 {
+            margin-bottom: 10px;
+            color: #001f3f;
+        }
+
+        .info-block ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-block ul li {
+            margin-bottom: 10px;
+        }
+
+        .info-block ul li::before {
+            content: "\f00c";
+            font-family: FontAwesome;
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        .characteristics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .characteristic {
+            text-align: center;
+            flex: 1 1 200px;
+            margin: 10px;
+            background: #ffffff;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .characteristic i {
+            font-size: 2rem;
+            color: #001f3f;
+            margin-bottom: 10px;
+        }
+
+        .characteristic p {
+            margin: 0;
+            font-weight: bold;
+            color: #001f3f;
         }
     </style>
 </head>
@@ -124,16 +171,13 @@
                         <a class="nav-link js-scroll-trigger" href="index.html#experience">Expérience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#education">Éducation</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html#education">Formations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#projects">Projets réalisés</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#interests">Intérêts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
@@ -157,32 +201,44 @@
             <h2>Qu'est-ce que l'Industrie 4.0 ?</h2>
         </div>
         <div class="article-content">
-            <p>L'industrie 4.0 est la plus récente évolution dans le secteur de la fabrication. Au cours des 250 dernières années, plusieurs révolutions industrielles ont transformé les méthodes de fabrication des biens. Avec une automatisation croissante et l'emploi de machines et d'usines intelligentes, les données analysées aident à produire des biens de manière plus efficace et productive tout au long de la chaîne de valeur.</p>
-            
-            <div class="infographic">
-                <img src="img/industrie4.0.png" alt="Infographie sur l'industrie 4.0">
+            <div class="info-block">
+                <h3>Définition</h3>
+                <p>L'industrie 4.0 est la plus récente évolution dans le secteur de la fabrication. Au cours des 250 dernières années, plusieurs révolutions industrielles ont transformé les méthodes de fabrication des biens. Avec une automatisation croissante et l'emploi de machines et d'usines intelligentes, les données analysées aident à produire des biens de manière plus efficace et productive tout au long de la chaîne de valeur.</p>
             </div>
-            
-            <h2>Les Révolutions Industrielles</h2>
-            <p>Les différentes révolutions industrielles qui ont marqué l'histoire de la fabrication sont les suivantes :</p>
-            <ul>
-                <li><strong>Industrie 1.0 :</strong> Mécanisation, machine à vapeur, métier à tisser (1784).</li>
-                <li><strong>Industrie 2.0 :</strong> Ligne d'assemblage, énergie électrique (1870).</li>
-                <li><strong>Industrie 3.0 :</strong> Automatisation, informatique et électronique (1969).</li>
-                <li><strong>Industrie 4.0 :</strong> Internet of Things (IoT), réseaux, Smart Factory (Aujourd'hui).</li>
-            </ul>
-            
-            <h2>Caractéristiques de l'Industrie 4.0</h2>
-            <p>L'industrie 4.0 se distingue par plusieurs caractéristiques clés :</p>
-            <ul>
-                <li><strong>Big Data :</strong> Analyse de données massives.</li>
-                <li><strong>Cloud Computing :</strong> Informatique dématérialisée.</li>
-                <li><strong>Robot Autonome :</strong> Automatisation intelligente.</li>
-                <li><strong>Internet of Things (IoT) :</strong> Interconnexion des objets.</li>
-                <li><strong>Cybersécurité :</strong> Protection des données.</li>
-            </ul>
-            
-            <p>En conclusion, l'industrie 4.0 représente une transformation majeure dans le secteur de la fabrication, offrant des opportunités pour des processus plus efficaces et une production plus intelligente. Cependant, elle nécessite également une adaptation aux nouvelles technologies et une gestion rigoureuse des données et de la sécurité.</p>
+            <div class="info-block">
+                <h3>Évolution de l'industrie</h3>
+                <ul>
+                    <li><strong>Industrie 1.0 :</strong> Mécanisation, Machine à vapeur, métier à tisser (1784)</li>
+                    <li><strong>Industrie 2.0 :</strong> Ligne d'assemblage, Énergie électrique (1870)</li>
+                    <li><strong>Industrie 3.0 :</strong> Automatisation, informatique et électronique (1969)</li>
+                    <li><strong>Industrie 4.0 :</strong> Internet of Things (IoT), Réseaux, Smart Factory (Maintenant)</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h3>Caractéristiques de l'industrie 4.0</h3>
+                <div class="characteristics">
+                    <div class="characteristic">
+                        <i class="fa fa-database"></i>
+                        <p>Big Data</p>
+                    </div>
+                    <div class="characteristic">
+                        <i class="fa fa-cloud"></i>
+                        <p>Cloud Computing</p>
+                    </div>
+                    <div class="characteristic">
+                        <i class="fa fa-android"></i>
+                        <p>Robot Autonome</p>
+                    </div>
+                    <div class="characteristic">
+                        <i class="fa fa-wifi"></i>
+                        <p>Internet of Things</p>
+                    </div>
+                    <div class="characteristic">
+                        <i class="fa fa-shield"></i>
+                        <p>Cybersécurité</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
