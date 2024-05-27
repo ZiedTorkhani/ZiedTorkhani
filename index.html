@@ -342,16 +342,13 @@
                         <a class="nav-link js-scroll-trigger" href="#education">Formations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">Projets réalisés</a>
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#quote">Demandez un Devis</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#testimonials">Témoignages</a>
@@ -472,30 +469,39 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>Projets réalisés</h2>
+                <h2>Portfolio</h2>
             </div>
-            <div class="resume-item">
-                <h3>Projets d'audits numériques</h3>
-                <div class="resume-date">Nombre de projets réalisés : 7</div>
-                <p>L'audit numérique est une évaluation approfondie et complète de l'écosystème numérique d'une entreprise. Son objectif est d'identifier les forces, les faiblesses et les opportunités en matière de technologie et de transformation numérique.</p>
-            </div>
-            <div class="resume-item">
-                <h3>Projets d'accompagnement pour la transformation numérique</h3>
-                <div class="resume-date">Nombre de projets réalisés : 5</div>
-                <p>Les projets d'accompagnement pour la transformation numérique visent à soutenir les entreprises dans leur adaptation aux changements technologiques rapides en élaborant des stratégies à long terme pour améliorer leur efficacité, leur productivité et leur rentabilité.</p>
-            </div>
-            <div class="resume-item">
-                <h3>Projets d'accompagnement en logistique</h3>
-                <div class="resume-date">Nombre de projets réalisés : 9</div>
-                <p>Les projets d'accompagnement en logistique visent à aider les entreprises à améliorer leur chaîne d'approvisionnement et à optimiser leurs processus logistiques.</p>
-            </div>
-            <div class="resume-item">
-                <h3>Projets d'accompagnement pour la conception et le réaménagement des entrepôts et des usines</h</div>
-                <div class="resume-date">Nombre de projets réalisés : 3</div>
-                <p>Les projets d'accompagnement pour la conception et le réaménagement des entrepôts et des usines sont des missions complexes qui nécessitent une grande expertise en matière de logistique et de gestion d'entreprises.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="img/project1.jpg" alt="Optimisation des Processus pour XYZ" class="img-fluid">
+                        <div class="portfolio-info">
+                            <h3>Optimisation des Processus pour XYZ</h3>
+                            <p>Optimisation des flux de travail et amélioration de l'efficacité opérationnelle. Réduction des temps de cycle de 20%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="img/project2.jpg" alt="Transformation Numérique pour ABC" class="img-fluid">
+                        <div class="portfolio-info">
+                            <h3>Transformation Numérique pour ABC</h3>
+                            <p>Implémentation de solutions ERP et CRM, augmentant la productivité de 30% et réduisant les coûts opérationnels de 15%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="img/project3.jpg" alt="Audit Numérique pour DEF" class="img-fluid">
+                        <div class="portfolio-info">
+                            <h3>Audit Numérique pour DEF</h3>
+                            <p>Évaluation complète de l'écosystème numérique, identification des opportunités d'amélioration et implémentation de nouvelles technologies.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -552,7 +558,7 @@
                 </div>
                 <div class="skill-card">
                     <i class="fa fa-tasks"></i>
-                    <h3>Jira</h</div>
+                    <h3>Jira</h3>
                 </div>
                 <div class="skill-card">
                     <i class="fa fa-lightbulb-o"></i>
@@ -619,20 +625,6 @@
         </div>
     </section>
 
-    <section id="quote">
-        <div class="container">
-            <div class="section-title">
-                <h2>Demandez un Devis</h2>
-            </div>
-            <form class="quote-form" method="post" action="https://formspree.io/YOUR_FORM_ID">
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="email" placeholder="Votre email" required>
-                <textarea name="project-details" rows="5" placeholder="Détails de votre projet" required></textarea>
-                <button type="submit">Obtenir un Devis</button>
-            </form>
-        </div>
-    </section>
-
     <section class="cta-section">
         <div class="container">
             <h2>Prêt à transformer votre entreprise ?</h2>
@@ -641,20 +633,18 @@
         </div>
     </section>
 
-    <section id="video-testimonials">
+    <section id="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Témoignages Vidéo</h2>
+                <h2>Témoignages</h2>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="video-testimonial">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/EXAMPLE" frameborder="0" allowfullscreen></iframe>
-                        <p>"Zied a transformé notre entreprise grâce à ses conseils d'expert!"</p>
-                        <p class="author">- Jean Dupont, CEO de Tech Solutions</p>
-                    </div>
-                </div>
-                <!-- Répétez pour plus de vidéos -->
+            <div class="testimonial">
+                <p>"Zied est un expert incroyable en logistique et transformation numérique. Sa capacité à optimiser les processus est exceptionnelle."</p>
+                <p class="author">- Jean Dupont, CEO de Tech Solutions</p>
+            </div>
+            <div class="testimonial">
+                <p>"Grâce à Zied, notre entreprise a pu moderniser ses systèmes d'information et améliorer significativement notre efficacité opérationnelle."</p>
+                <p class="author">- Marie Leblanc, Directrice des opérations, InnovTech</p>
             </div>
         </div>
     </section>
