@@ -89,6 +89,53 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
+
+        .info-block {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .info-block h3 {
+            margin-bottom: 10px;
+        }
+
+        .info-block ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-block ul li {
+            margin-bottom: 10px;
+        }
+
+        .info-block ul li::before {
+            content: "\2022";
+            color: #ffd700;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .characteristics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .characteristic {
+            text-align: center;
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .characteristic img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -112,16 +159,13 @@
                         <a class="nav-link js-scroll-trigger" href="index.html#experience">Expérience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#education">Éducation</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html#education">Formations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#projects">Projets réalisés</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#interests">Intérêts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
@@ -142,34 +186,47 @@
 
     <section class="container">
         <div class="article-title">
-            <h2>Les Systèmes d’Information</h2>
+            <h2>Qu'est-ce que l'Industrie 4.0 ?</h2>
         </div>
         <div class="article-content">
-            <p>Les systèmes d’information (SI) sont au cœur de la transformation numérique des entreprises modernes. Ils permettent de collecter, traiter, stocker et diffuser l’information de manière efficace et sécurisée. Les SI sont essentiels pour optimiser les processus métiers, améliorer la prise de décision et renforcer la compétitivité des entreprises.</p>
-            
-            <h2>Qu'est-ce qu'un Système d'Information ?</h2>
-            <p>Un système d’information est un ensemble organisé de ressources (matériel, logiciel, personnel, données, procédures) permettant de collecter, stocker, traiter et communiquer des informations. Il supporte les activités de gestion et les processus opérationnels de l’entreprise. Les SI comprennent notamment les systèmes de gestion de base de données, les systèmes de planification des ressources d'entreprise (ERP), les systèmes de gestion de la relation client (CRM) et les systèmes de gestion des ressources humaines (HRMS).</p>
-            
-            <h2>Les Avantages des Systèmes d’Information</h2>
-            <p>Les systèmes d’information offrent de nombreux avantages aux entreprises :</p>
-            <ul>
-                <li><strong>Automatisation des tâches :</strong> Les SI permettent d’automatiser de nombreuses tâches répétitives, libérant ainsi du temps pour des activités à plus forte valeur ajoutée.</li>
-                <li><strong>Amélioration de la prise de décision :</strong> En fournissant des informations précises et en temps réel, les SI facilitent la prise de décision basée sur des données fiables.</li>
-                <li><strong>Optimisation des processus :</strong> Les SI permettent de modéliser, suivre et optimiser les processus métiers, améliorant ainsi l'efficacité opérationnelle.</li>
-                <li><strong>Gestion des données :</strong> Les SI offrent des capacités avancées de gestion et d'analyse des données, permettant aux entreprises de mieux comprendre leur environnement et de prédire les tendances futures.</li>
-                <li><strong>Communication et collaboration :</strong> Les SI facilitent la communication et la collaboration entre les différents départements de l’entreprise, ainsi qu’avec les partenaires externes.</li>
-            </ul>
-            
-            <h2>Les Défis des Systèmes d’Information</h2>
-            <p>Malgré leurs nombreux avantages, les systèmes d’information présentent également certains défis :</p>
-            <ul>
-                <li><strong>Sécurité :</strong> La protection des données sensibles est un enjeu majeur pour les SI. Les entreprises doivent mettre en place des mesures de sécurité robustes pour protéger leurs informations.</                li>
-                <li><strong>Coût :</strong> L’implémentation et la maintenance des SI peuvent représenter un investissement important pour les entreprises.</li>
-                <li><strong>Complexité :</strong> Les SI peuvent être complexes à mettre en œuvre et à intégrer avec les systèmes existants. Une planification minutieuse et une gestion rigoureuse des projets sont nécessaires pour garantir leur succès.</li>
-                <li><strong>Formation :</strong> Les utilisateurs doivent être formés pour utiliser efficacement les SI, ce qui peut nécessiter du temps et des ressources supplémentaires.</li>
-            </ul>
-            
-            <p>En conclusion, les systèmes d’information sont des outils puissants pour les entreprises, leur permettant d’améliorer leur efficacité opérationnelle, de prendre des décisions éclairées et de rester compétitives dans un environnement en constante évolution. Cependant, leur mise en œuvre nécessite une attention particulière aux aspects de sécurité, de coût, de complexité et de formation.</p>
+            <div class="info-block">
+                <h3>Définition</h3>
+                <p>L'industrie 4.0 est la plus récente évolution dans le secteur de la fabrication. Au cours des 250 dernières années, plusieurs révolutions industrielles ont transformé les méthodes de fabrication des biens. Avec une automatisation croissante et l'emploi de machines et d'usines intelligentes, les données analysées aident à produire des biens de manière plus efficace et productive tout au long de la chaîne de valeur.</p>
+            </div>
+            <div class="info-block">
+                <h3>Évolution de l'industrie</h3>
+                <ul>
+                    <li><strong>Industrie 1.0 :</strong> Mécanisation, Machine à vapeur, métier à tisser (1784)</li>
+                    <li><strong>Industrie 2.0 :</strong> Ligne d'assemblage, Énergie électrique (1870)</li>
+                    <li><strong>Industrie 3.0 :</strong> Automatisation, informatique et électronique (1969)</li>
+                    <li><strong>Industrie 4.0 :</strong> Internet of Things (IoT), Réseaux, Smart Factory (Maintenant)</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h3>Caractéristiques de l'industrie 4.0</h3>
+                <div class="characteristics">
+                    <div class="characteristic">
+                        <img src="img/big-data.png" alt="Big Data">
+                        <p>Big Data</p>
+                    </div>
+                    <div class="characteristic">
+                        <img src="img/cloud-computing.png" alt="Cloud Computing">
+                        <p>Cloud Computing</p>
+                    </div>
+                    <div class="characteristic">
+                        <img src="img/robot.png" alt="Robot Autonome">
+                        <p>Robot Autonome</p>
+                    </div>
+                    <div class="characteristic">
+                        <img src="img/iot.png" alt="Internet of Things">
+                        <p>Internet of Things</p>
+                    </div>
+                    <div class="characteristic">
+                        <img src="img/cybersecurity.png" alt="Cybersécurité">
+                        <p>Cybersécurité</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -186,4 +243,3 @@
 </body>
 
 </html>
-
