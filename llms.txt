@@ -1,6 +1,6 @@
 # Zied Torkhani
 
-> Zied Torkhani (nom complet : Mohamed Zied Torkhani) est gestionnaire de l'excellence organisationnelle chez Soleno inc., fabricant québécois de solutions de gestion des eaux pluviales. Il est spécialiste en excellence organisationnelle et en aide à la décision pour le secteur manufacturier québécois. Il combine une formation en recherche opérationnelle (M.Sc., Université Laval) et une expérience terrain en systèmes de gestion (ERP, CRM, WMS) et en analyse de données. Région : Grand Montréal (Rive-Sud), Québec, Canada. Langues : français, anglais, arabe.
+> Zied Torkhani est gestionnaire de l'excellence organisationnelle chez Soleno inc., fabricant québécois de solutions de gestion des eaux pluviales. Il est spécialiste en excellence organisationnelle et en aide à la décision pour le secteur manufacturier québécois. Il combine une formation en recherche opérationnelle (M.Sc., Université Laval) et une expérience terrain en systèmes de gestion (ERP, CRM, WMS) et en analyse de données. Région : Grand Montréal (Rive-Sud), Québec, Canada. Langues : français, anglais, arabe.
 
 ## Parcours
 
@@ -18,12 +18,11 @@
 
 ## Publications
 
-- [Développement d'algorithmes dynamiques et stochastiques pour le problème de transport de patients dans les hôpitaux](https://core.ac.uk/download/521139015.pdf) : mémoire de maîtrise, Mohamed Zied Torkhani, Université Laval, 2022
-- [Healthcare Dynamic and Stochastic Transportation](https://www.cirrelt.ca/documentstravail/cirrelt-2023-32.pdf) : document de travail CIRRELT-2023-32, septembre 2023, Imadeddine Aziez, Mohamed Zied Torkhani, Jean-François Côté, Paolo Landa, Leandro C. Coelho (DOI 10.2139/ssrn.4622857)
+- [Développement d'algorithmes dynamiques et stochastiques pour le problème de transport de patients dans les hôpitaux](https://core.ac.uk/download/521139015.pdf) : mémoire de maîtrise, Zied Torkhani, Université Laval, 2022
+- [Healthcare Dynamic and Stochastic Transportation](https://www.cirrelt.ca/documentstravail/cirrelt-2023-32.pdf) : document de travail CIRRELT-2023-32, septembre 2023, Imadeddine Aziez, Zied Torkhani, Jean-François Côté, Paolo Landa, Leandro C. Coelho (DOI 10.2139/ssrn.4622857)
 
 ## Liens
 
 - [Site (français)](https://ziedtorkhani.github.io/)
 - [Site (English)](https://ziedtorkhani.github.io/en/)
 - [LinkedIn](https://www.linkedin.com/in/zied-torkhani/)
-- [GitHub](https://github.com/ZiedTorkhani)
