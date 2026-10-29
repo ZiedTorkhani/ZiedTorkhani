@@ -1,677 +1,293 @@
-<!DOCTYPE html>
-<html lang="fr">
-
+<!doctype html>
+<html lang="fr-CA">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zied Torkhani - Consultant en Génie Industriel et Transformation Numérique</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zied Torkhani | Excellence organisationnelle et aide à la décision</title>
+  <meta name="description" content="Zied Torkhani (Mohamed Zied Torkhani), gestionnaire de l'excellence organisationnelle chez Soleno : aide à la décision et recherche opérationnelle au Québec.">
+  <meta name="author" content="Zied Torkhani">
+  <link rel="canonical" href="https://ziedtorkhani.github.io/">
+  <link rel="alternate" hreflang="fr-CA" href="https://ziedtorkhani.github.io/">
+  <link rel="alternate" hreflang="en" href="https://ziedtorkhani.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://ziedtorkhani.github.io/">
+  <meta name="theme-color" content="#f2f3f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121722" media="(prefers-color-scheme: dark)">
 
-        .navbar {
-            background: #001f3f;
-        }
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:locale:alternate" content="en_CA">
+  <meta property="og:site_name" content="Zied Torkhani">
+  <meta property="og:title" content="Zied Torkhani | Excellence organisationnelle et aide à la décision">
+  <meta property="og:description" content="Gestionnaire de l'excellence organisationnelle chez Soleno. Aide à la décision, recherche opérationnelle (M.Sc., Université Laval), systèmes de gestion et données.">
+  <meta property="og:url" content="https://ziedtorkhani.github.io/">
+  <meta property="og:image" content="https://ziedtorkhani.github.io/img/profil.jpeg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  <meta property="og:image:alt" content="Zied Torkhani">
+  <meta property="profile:first_name" content="Zied">
+  <meta property="profile:last_name" content="Torkhani">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Zied Torkhani | Excellence organisationnelle et aide à la décision">
+  <meta name="twitter:description" content="Gestionnaire de l'excellence organisationnelle chez Soleno. Aide à la décision, recherche opérationnelle, systèmes de gestion et données.">
+  <meta name="twitter:image" content="https://ziedtorkhani.github.io/img/profil.jpeg">
 
-        .navbar-brand img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="css/site.css">
 
-        .navbar-nav {
-            flex-direction: row;
-        }
-
-        .navbar-nav .nav-item {
-            padding: 0 15px;
-        }
-
-        .navbar-nav .nav-link {
-            color: white !important;
-            transition: color 0.3s;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #ffd700 !important;
-        }
-
-        header {
-            background: url('img/header-bg.jpg') no-repeat center center/cover;
-            height: 100vh;
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        header h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        header p {
-            font-size: 1.5rem;
-            color: #ffd700;
-            background-color: rgba(0, 31, 63, 0.8);
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-
-        section {
-            padding: 60px 0;
-            background-color: #ffffff;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-            color: #001f3f;
-        }
-
-        .section-title::after {
-            content: '';
-            width: 60px;
-            height: 4px;
-            background: #001f3f;
-            display: block;
-            margin: 20px auto 0;
-        }
-
-        .resume-item {
-            background: #f4f4f4;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-
-        .resume-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .resume-item h3 {
-            margin-bottom: 10px;
-            color: #001f3f;
-        }
-
-        .resume-item .subheading {
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .resume-item .resume-date {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: auto;
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .contact-form button {
-            padding: 10px 20px;
-            background: #001f3f;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .contact-form button:hover {
-            background: #ffd700;
-            color: #001f3f;
-        }
-
-        .social-icons a {
-            color: #001f3f;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #ffd700;
-        }
-
-        .testimonial {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial p {
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-
-        .testimonial .author {
-            font-weight: bold;
-            color: #001f3f;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .skills-list li {
-            margin: 10px;
-            list-style: none;
-            padding: 10px 20px;
-            background: #f4f4f4;
-            border-radius: 4px;
-        }
-
-        .skills-list i {
-            margin-right: 10px;
-            color: #001f3f;
-        }
-
-        .skills-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .skill-card {
-            flex: 1 1 200px;
-            padding: 20px;
-            background: #f4f4f4;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .skill-card i {
-            font-size: 3rem;
-            color: #001f3f;
-            margin-bottom: 10px;
-        }
-
-        .professional-skills {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .professional-skills h4 {
-            text-align: center;
-            color: #001f3f;
-        }
-
-        .professional-skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            list-style: none;
-            padding: 0;
-        }
-
-        .professional-skills ul li {
-            background: #f4f4f4;
-            padding: 10px 20px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-        }
-
-        .professional-skills ul li i {
-            margin-right: 10px;
-            color: #001f3f;
-            font-size: 1.5rem;
-        }
-
-        .services-section {
-            padding: 60px 0;
-            background: #f8f9fa;
-        }
-
-        .service-card {
-            flex: 1 1 300px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-card h3 {
-            margin-bottom: 10px;
-            color: #001f3f;
-        }
-
-        .service-card p {
-            color: #666;
-        }
-
-        .cta-section {
-            background-color: #001f3f;
-            color: white;
-            text-align: center;
-            padding: 60px 0;
-        }
-
-        .cta-section h2 {
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-        }
-
-        .cta-section p {
-            margin-bottom: 30px;
-            font-size: 1.2rem;
-        }
-
-        .cta-section a {
-            padding: 10px 20px;
-            background: #ffd700;
-            color: #001f3f;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-
-        .cta-section a:hover {
-            background: white;
-        }
-    </style>
-    <script defer
-    src="https://sitebehaviour-cdn.fra1.cdn.digitaloceanspaces.com/index.min.js?sitebehaviour-secret=7ef6ca2f-f441-4225-bc22-9f84c675d440">
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://ziedtorkhani.github.io/#person",
+    "name": "Zied Torkhani",
+    "alternateName": ["Mohamed Zied Torkhani"],
+    "givenName": "Zied",
+    "familyName": "Torkhani",
+    "url": "https://ziedtorkhani.github.io/",
+    "image": "https://ziedtorkhani.github.io/img/profil.jpeg",
+    "jobTitle": "Gestionnaire de l'excellence organisationnelle",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Soleno inc."
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Université Laval" },
+      { "@type": "CollegeOrUniversity", "name": "École nationale d'ingénieurs de Carthage" }
+    ],
+    "knowsLanguage": ["fr", "en", "ar"],
+    "knowsAbout": [
+      "Excellence organisationnelle",
+      "Excellence opérationnelle",
+      "Aide à la décision",
+      "Recherche opérationnelle",
+      "Optimisation",
+      "ERP",
+      "Analyse d'affaires",
+      "Secteur manufacturier"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "QC",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/zied-torkhani/",
+      "https://github.com/ZiedTorkhani"
+    ]
+  }
+  </script>
+  <!-- TODO : ajouter les liens ORCID et Google Scholar dans sameAs quand ils existeront -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Thesis",
+        "@id": "https://ziedtorkhani.github.io/#memoire-2022",
+        "name": "Développement d'algorithmes dynamiques et stochastiques pour le problème de transport de patients dans les hôpitaux",
+        "inLanguage": "fr",
+        "datePublished": "2022",
+        "author": { "@id": "https://ziedtorkhani.github.io/#person" },
+        "inSupportOf": "Maîtrise en sciences de l'administration (M.Sc.), opérations et systèmes de décision",
+        "sourceOrganization": { "@type": "CollegeOrUniversity", "name": "Université Laval" },
+        "contributor": [
+          { "@type": "Person", "name": "Jean-François Côté" },
+          { "@type": "Person", "name": "Paolo Landa" }
+        ],
+        "url": "https://core.ac.uk/download/521139015.pdf"
+      },
+      {
+        "@type": "Report",
+        "@id": "https://ziedtorkhani.github.io/#cirrelt-2023-32",
+        "name": "Healthcare Dynamic and Stochastic Transportation",
+        "reportNumber": "CIRRELT-2023-32",
+        "inLanguage": "en",
+        "datePublished": "2023-09",
+        "author": [
+          { "@type": "Person", "name": "Imadeddine Aziez" },
+          { "@id": "https://ziedtorkhani.github.io/#person" },
+          { "@type": "Person", "name": "Jean-François Côté" },
+          { "@type": "Person", "name": "Paolo Landa" },
+          { "@type": "Person", "name": "Leandro C. Coelho" }
+        ],
+        "publisher": { "@type": "Organization", "name": "CIRRELT" },
+        "url": "https://www.cirrelt.ca/documentstravail/cirrelt-2023-32.pdf",
+        "sameAs": "https://doi.org/10.2139/ssrn.4622857"
+      }
+    ]
+  }
+  </script>
 </head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
 
-<body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img src="img/profil.jpeg" alt="Profile Picture">
-                <span>Zied Torkhani</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#experience">Expérience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#education">Formations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#testimonials">Témoignages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <header class="wrap top">
+    <a class="monogram" href="./" aria-label="Zied Torkhani, accueil">ZT</a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="lang" href="en/" hreflang="en" lang="en">English</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <header>
-        <div class="container">
-            <h1>Zied Torkhani</h1>
-            <p>Consultant en Génie Industriel et Transformation Numérique</p>
-            <p>Je m'efforce de rendre les concepts complexes accessibles et d'aider les entreprises à exceller en intégrant des technologies de pointe.</p>
+  <main id="contenu">
+    <div class="wrap hero">
+      <div class="hero-grid">
+        <div>
+          <h1><span>Zied</span><span>Torkhani</span></h1>
+          <p class="fullname">Mohamed Zied Torkhani</p>
+          <p class="role">Gestionnaire de l’excellence organisationnelle chez Soleno</p>
+          <p class="lede">Zied Torkhani est spécialiste en excellence organisationnelle et en aide à la décision pour le secteur manufacturier québécois. Il combine une formation en recherche opérationnelle (M.Sc., Université Laval) et une expérience terrain en systèmes de gestion (ERP, CRM, WMS) et en analyse de données.</p>
         </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>À propos de moi</h2>
-            </div>
-            <p>Bienvenue sur mon site web ! Je m'appelle Zied Torkhani, et je suis consultant en génie industriel et transformation numérique. Ma passion pour l'optimisation des opérations et l'analyse d'affaires m'a conduit à travailler avec diverses entreprises québécoises, où j'ai pu constater l'importance cruciale de l'efficacité opérationnelle. Mon objectif est de rendre les concepts complexes accessibles et d'aider les entreprises à exceller en intégrant des technologies de pointe pour moderniser les processus et digitaliser les opérations, assurant ainsi une transition fluide vers l'industrie 4.0.</p>
-            <p>Je me concentre sur plusieurs axes principaux :</p>
-            <ul>
-                <li><strong>Optimisation des opérations :</strong> J'améliore les flux de travail et augmente l'efficacité en identifiant les points de blocage et en proposant des solutions pratiques.</li>
-                <li><strong>Transformation numérique :</strong> J'intègre des technologies de pointe pour moderniser les processus et digitaliser les opérations, assurant ainsi une transition fluide vers l'industrie 4.0.</li>
-                <li><strong>Sélection et implémentation des systèmes d'information et de gestion d'entreprise :</strong> De la rédaction des cahiers des charges à l'accompagnement durant tout le processus de mise en œuvre, je veille à ce que les solutions choisies répondent parfaitement aux besoins spécifiques de chaque entreprise.</li>
-                <li><strong>Développement sur mesure :</strong> J'aide au développement d'ERP, TMS, WMS sur mesure en accompagnant la phase de conception et de test.</li>
-                <li><strong>Audit numérique :</strong> Je réalise des audits numériques pour évaluer l'écosystème technologique de votre entreprise et proposer des améliorations.</li>
-                <li><strong>Analyse d'affaires :</strong> J'analyse les besoins et les exigences des entreprises pour améliorer leur efficacité opérationnelle et leur rentabilité.</li>
-            </ul>
-            <div class="social-icons text-center">
-                <a href="https://www.linkedin.com/in/zied-torkhani/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/ZiedTorkhani/ZiedTorkhani"><i class="fa fa-github"></i></a>
-            </div>
+        <div class="portrait">
+          <img src="img/profil.jpeg" alt="Zied Torkhani" width="400" height="400">
         </div>
-    </section>
+      </div>
+      <svg class="route" viewBox="0 0 1000 72" aria-hidden="true" focusable="false">
+        <path pathLength="1" d="M8 52 C 120 52, 170 18, 270 20 S 460 60, 560 48 S 760 10, 860 22 S 960 36, 992 36"/>
+        <circle cx="8" cy="52" r="5"/>
+        <circle cx="270" cy="20" r="5"/>
+        <circle cx="560" cy="48" r="5"/>
+        <circle cx="860" cy="22" r="5"/>
+        <circle class="end" cx="992" cy="36" r="5"/>
+      </svg>
+    </div>
 
-    <section id="experience">
-        <div class="container">
-            <div class="section-title">
-                <h2>Expérience</h2>
-            </div>
-            <div class="resume-item">
-                <h3>Analyste d'Affaires</h3>
-                <div class="subheading">Productique Québec - Québec</div>
-                <div class="resume-date">Mars 2024 - Présent</div>
-                <ul>
-                    <li>Identification des besoins opérationnels et fonctionnels pour les projets de transformation numérique.</li>
-                    <li>Rédaction de cahiers des charges et sélection de fournisseurs de solutions technologiques.</li>
-                    <li>Gestion de l'implémentation des systèmes ERP et autres solutions de gestion.</li>
-                    <li>Analyse et optimisation des processus logistiques et de production pour améliorer l'efficacité et réduire les coûts.</li>
-                    <li>Accompagnement des entreprises dans l'intégration de nouvelles technologies pour améliorer leur compétitivité.</li>
-                    <li>Formation des utilisateurs et support post-implémentation pour assurer une transition en douceur.</li>
-                    <li>Collaboration avec les parties prenantes pour garantir l'alignement des solutions avec les objectifs stratégiques.</li>
-                    <li>Élaboration de plans de transformation numérique et gestion des changements associés.</li>
-                </ul>
-            </div>
-            <div class="resume-item">
-                <h3>Analyste d'Affaires</h3>
-                <div class="subheading">HelloDarwin - Montréal</div>
-                <div class="resume-date">Novembre 2023 - Mars 2024</div>
-                <ul>
-                    <li>Analyse des besoins des clients pour déterminer les solutions technologiques adaptées.</li>
-                    <li>Gestion de projets de transformation numérique en collaboration avec les équipes techniques.</li>
-                    <li>Élaboration de cahiers des charges pour la sélection et l'implémentation de systèmes d'information.</li>
-                    <li>Optimisation des processus d'affaires grâce à l'automatisation et aux nouvelles technologies.</li>
-                    <li>Formation et accompagnement des utilisateurs lors de la mise en place des nouvelles solutions.</li>
-                    <li>Veille technologique pour identifier les tendances et les innovations pertinentes pour les clients.</li>
-                </ul>
-            </div>
-            <div class="resume-item">
-                <h3>Analyste Logistique</h3>
-                <div class="subheading">Institut d'Innovation en Logistique du Québec (InnovLOG) - Montréal</div>
-                <div class="resume-date">Septembre 2022 - Novembre 2023</div>
-                <ul>
-                    <li>Identification, définition et documentation des besoins et des exigences des entreprises pour améliorer leur efficacité opérationnelle.</li>
-                    <li>Accompagnement des entreprises dans l'intégration de systèmes d'information et d'autres technologies, en rédigeant des cahiers des charges et en sélectionnant des systèmes et des fournisseurs.</li>
-                    <li>Réalisation d'audits numériques pour évaluer les pratiques existantes et identifier les opportunités d'amélioration.</li>
-                    <li>Élaboration de plans de transformation numérique pour aider les entreprises à exploiter pleinement les avantages des technologies numériques.</li>
-                    <li>Accompagnement des entreprises dans leur transformation numérique, en proposant des solutions adaptées et en travaillant en étroite collaboration avec les équipes.</li>
-                    <li>Réaménagement des entrepôts en analysant les flux de marchandises et en identifiant les inefficacités pour proposer des solutions innovantes.</li>
-                </ul>
-            </div>
+    <div class="wrap">
+      <section id="parcours" aria-labelledby="t-parcours">
+        <h2 id="t-parcours">Parcours</h2>
+        <div class="body">
+          <ol class="timeline" reversed>
+            <li class="now">
+              <span class="when">Depuis octobre 2025</span>
+              <p class="what">Gestionnaire de l’excellence organisationnelle</p>
+              <p class="where">Soleno inc., fabricant québécois de solutions de gestion des eaux pluviales</p>
+              <ul>
+                <li>Aide à la décision auprès de la direction.</li>
+                <li>Amélioration des processus de bout en bout : commandes, planification, transport et achats.</li>
+                <li>Indicateurs et tableaux de bord.</li>
+              </ul>
+            </li>
+            <li>
+              <span class="when">Mars 2024 à 2025</span>
+              <p class="what">Analyste d’affaires</p>
+              <p class="where">Productique Québec</p>
+              <ul>
+                <li>Analyse des besoins et rédaction de cahiers des charges pour des PME.</li>
+                <li>Sélection et implantation de systèmes ERP.</li>
+                <li>Optimisation des processus logistiques et de production.</li>
+              </ul>
+            </li>
+            <li>
+              <span class="when">Novembre 2023 à mars 2024</span>
+              <p class="what">Analyste d’affaires</p>
+              <p class="where">helloDarwin</p>
+              <ul>
+                <li>Analyse des besoins des entreprises clientes.</li>
+                <li>Cahiers des charges pour la sélection de systèmes ERP et CRM.</li>
+              </ul>
+            </li>
+            <li>
+              <span class="when">Septembre 2022 à novembre 2023</span>
+              <p class="what">Analyste logistique</p>
+              <p class="where">InnovLOG, Institut d’innovation en logistique du Québec</p>
+              <ul>
+                <li>Analyse des besoins et sélection de systèmes WMS et ERP en PME.</li>
+                <li>Optimisation des processus logistiques et de l’aménagement d’entrepôts.</li>
+              </ul>
+            </li>
+            <li>
+              <span class="when">2019 à 2022</span>
+              <p class="what">Recherche opérationnelle</p>
+              <p class="where">Université Laval</p>
+              <ul>
+                <li>Stagiaire en planification du transport (2019).</li>
+                <li>Auxiliaire de recherche (2020 et 2021), puis professionnel de recherche (2022).</li>
+              </ul>
+            </li>
+          </ol>
         </div>
-    </section>
+      </section>
 
-    <section id="education">
-        <div class="container">
-            <div class="section-title">
-                <h2>Formations</h2>
-            </div>
-            <div class="resume-item">
-                <h3>Université Laval</h3>
-                <div class="subheading">Maîtrise en sciences de l'administration - opérations et systèmes de décision (avec mémoire)</div>
-                <div class="resume-date">2020 - 2022</div>
-                <p>Titre de mémoire : Développement des algorithmes dynamiques et stochastiques pour le problème de transport de patients dans hôpitaux</p>
-            </div>
-            <div class="resume-item">
-                <h3>Ecole Nationale d’Ingénieurs de Carthage</h3>
-                <div class="subheading">Ingénieur Des Systèmes Industriels et Logistiques</div>
-                <div class="resume-date">2016 - 2019</div>
-                <p>Formation en Génie Des Systèmes Industriels et Logistiques au sein de l’ENICarthage.</p>
-            </div>
-            <div class="resume-item">
-                <h3>Université Laval et IIBA Québec</h3>
-                <div class="subheading">Formation en Analyse d'Affaires - Niveau ECBA</div>
-                <div class="resume-date">2023</div>
-                <p>Formation axée sur les compétences essentielles en analyse d'affaires, avec une reconnaissance internationale par l'IIBA.</p>
-            </div>
+      <section id="formation" aria-labelledby="t-formation">
+        <h2 id="t-formation">Formation</h2>
+        <div class="body">
+          <ul class="entries">
+            <li>
+              <h3>M.Sc. en sciences de l’administration, opérations et systèmes de décision (avec mémoire)</h3>
+              <p>Université Laval, 2020 à 2022</p>
+            </li>
+            <li>
+              <h3>Formation en génie des systèmes industriels et logistiques</h3>
+              <p>École nationale d’ingénieurs de Carthage, Tunisie, 2016 à 2019</p>
+            </li>
+            <li>
+              <h3>Formation en analyse d’affaires, niveau ECBA (IIBA)</h3>
+              <p>Université Laval et IIBA Québec, 2023</p>
+            </li>
+          </ul>
         </div>
-    </section>
+      </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <div class="section-title">
-                <h2>Portfolio</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="img/project1.jpg" alt="Optimisation des Processus pour XYZ" class="img-fluid">
-                        <div class="portfolio-info">
-                            <h3>Optimisation des Processus pour XYZ</h3>
-                            <p>Optimisation des flux de travail et amélioration de l'efficacité opérationnelle. Réduction des temps de cycle de 20%.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="img/project2.jpg" alt="Transformation Numérique pour ABC" class="img-fluid">
-                        <div class="portfolio-info">
-                            <h3>Transformation Numérique pour ABC</h3>
-                            <p>Implémentation de solutions ERP et CRM, augmentant la productivité de 30% et réduisant les coûts opérationnels de 15%.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="img/project3.jpg" alt="Audit Numérique pour DEF" class="img-fluid">
-                        <div class="portfolio-info">
-                            <h3>Audit Numérique pour DEF</h3>
-                            <p>Évaluation complète de l'écosystème numérique, identification des opportunités d'amélioration et implémentation de nouvelles technologies.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <section id="publications" aria-labelledby="t-publications">
+        <h2 id="t-publications">Publications</h2>
+        <div class="body">
+          <ul class="entries">
+            <li class="pub">
+              <span class="kind">Mémoire de maîtrise, 2022</span>
+              <h3 class="pub-title"><a href="https://core.ac.uk/download/521139015.pdf">Développement d’algorithmes dynamiques et stochastiques pour le problème de transport de patients dans les hôpitaux</a></h3>
+              <p class="authors">Mohamed Zied Torkhani</p>
+              <p>Université Laval. Direction : Jean-François Côté ; codirection : Paolo Landa.</p>
+              <p>Construction en temps réel des itinéraires de transport de patients entre les services d’un grand centre hospitalier, avec des approches statique, dynamique et stochastique.</p>
+            </li>
+            <li class="pub">
+              <span class="kind">Document de travail CIRRELT-2023-32, septembre 2023</span>
+              <h3 class="pub-title"><a href="https://www.cirrelt.ca/documentstravail/cirrelt-2023-32.pdf" lang="en">Healthcare Dynamic and Stochastic Transportation</a></h3>
+              <p class="authors">Imadeddine Aziez, Mohamed Zied Torkhani, Jean-François Côté, Paolo Landa, Leandro C. Coelho</p>
+              <p>Transport dynamique et stochastique de patients en milieu hospitalier, comparé sur des données réelles.</p>
+              <p class="pub-links"><a href="https://www.cirrelt.ca/documentstravail/cirrelt-2023-32.pdf">PDF du CIRRELT</a><a href="https://doi.org/10.2139/ssrn.4622857">DOI 10.2139/ssrn.4622857</a></p>
+            </li>
+          </ul>
         </div>
-    </section>
+      </section>
 
-    <section id="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>Compétences</h2>
-            </div>
-            <div class="skills-section">
-                <div class="skill-card">
-                    <i class="devicon-cplusplus-plain"></i>
-                    <h3>C++</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="devicon-c-plain"></i>
-                    <h3>C</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="devicon-csharp-plain"></i>
-                    <h3>C#</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="devicon-java-plain"></i>
-                    <h3>Java</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-database"></i>
-                    <h3>SQL</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-code"></i>
-                    <h3>R</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-desktop"></i>
-                    <h3>Visio</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-cogs"></i>
-                    <h3>anyLogistix</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-pencil-square-o"></i>
-                    <h3>AutoCAD</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-gears"></i>
-                    <h3>Cplex</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-code"></i>
-                    <h3>Latex</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-tasks"></i>
-                    <h3>Jira</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-lightbulb-o"></i>
-                    <h3>Veille technologique</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-cloud"></i>
-                    <h3>ERP Systems</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-users"></i>
-                    <h3>CRM Systems</h3>
-                </div>
-            </div>
-            <div class="professional-skills">
-                <h4>Compétences professionnelles</h4>
-                <ul>
-                    <li><i class="fa fa-search"></i> Analyse des besoins et des exigences</li>
-                    <li><i class="fa fa-bar-chart"></i> Analyse de données</li>
-                    <li><i class="fa fa-line-chart"></i> Optimisation des processus d'affaires</li>
-                    <li><i class="fa fa-cogs"></i> Conception et coordination de chaînes logistiques</li>
-                    <li><i class="fa fa-users"></i> Gestion de la relation client-fournisseur (CRM/SRM)</li>
-                    <li><i class="fa fa-truck"></i> Logistique de la distribution</li>
-                    <li><i class="fa fa-archive"></i> Gestion des stocks et approvisionnement</li>
-                    <li><i class="fa fa-calendar"></i> Planification de la demande et de la production</li>
-                    <li><i class="fa fa-cloud"></i> Systèmes d'information et ERP</li>
-                    <li><i class="fa fa-brain"></i> Apprentissage automatique et intelligence artificielle</li>
-                    <li><i class="fa fa-comments"></i> Communication et coordination interfonctionnelles</li>
-                    <li><i class="fa fa-lightbulb-o"></i> Résolution de problèmes et prise de décisions</li>
-                    <li><i class="fa fa-tachometer"></i> Capacité à travailler sous pression et à gérer des projets simultanément</li>
-                    <li><i class="fa fa-tasks"></i> Gestion de projets</li>
-                </ul>
-            </div>
+      <section id="competences" aria-labelledby="t-competences">
+        <h2 id="t-competences">Compétences</h2>
+        <div class="body">
+          <dl class="skills">
+            <div><dt>Méthodes</dt><dd>Aide à la décision, recherche opérationnelle et optimisation, amélioration des processus, analyse d’affaires, planification de la demande et de la production</dd></div>
+            <div><dt>Données</dt><dd>Python, SQL, Power BI, R</dd></div>
+            <div><dt>Systèmes de gestion</dt><dd>Microsoft Dynamics NAV, Odoo, Salesforce</dd></div>
+            <div><dt>Modélisation</dt><dd>CPLEX, anyLogistix</dd></div>
+            <div><dt>Langues</dt><dd>Français, anglais, arabe</dd></div>
+          </dl>
         </div>
-    </section>
+      </section>
 
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Services</h2>
-            </div>
-            <div class="skills-section">
-                <div class="service-card">
-                    <h3>Optimisation des Processus</h3>
-                    <p>J'améliore les flux de travail et augmente l'efficacité en identifiant les points de blocage et en proposant des solutions pratiques et personnalisées.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Sélection et Implémentation de Logiciels</h3>
-                    <p>Je vous aide à choisir et à mettre en place les meilleurs logiciels de gestion pour ERP, MES, APS, et CRM, adaptés à vos besoins spécifiques.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Développement sur Mesure</h3>
-                    <p>Je vous accompagne dans le développement d'ERP, TMS, et WMS sur mesure, en assurant la phase de conception et de test pour une solution parfaitement adaptée.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Audit Numérique</h3>
-                    <p>Je réalise des audits numériques pour évaluer l'écosystème technologique de votre entreprise et proposer des améliorations concrètes et efficaces.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Analyse d'Affaires</h3>
-                    <p>J'analyse vos besoins et exigences pour améliorer votre efficacité opérationnelle et votre rentabilité à travers des solutions technologiques innovantes.</p>
-                </div>
-            </div>
+      <section id="contact" aria-labelledby="t-contact">
+        <h2 id="t-contact">Contact</h2>
+        <div class="body">
+          <p>Grand Montréal (Rive-Sud), Québec. Le plus simple pour me joindre est LinkedIn.</p>
+          <ul class="contact-list">
+            <li><a href="https://www.linkedin.com/in/zied-torkhani/" rel="me">LinkedIn</a></li>
+            <li><a href="https://github.com/ZiedTorkhani" rel="me">GitHub</a></li>
+          </ul>
         </div>
-    </section>
+      </section>
+    </div>
+  </main>
 
-    <section class="cta-section">
-        <div class="container">
-            <h2>Prêt à transformer votre entreprise ?</h2>
-            <p>Contactez-moi dès aujourd'hui pour une consultation gratuite et découvrez comment je peux vous aider à atteindre vos objectifs.</p>
-            <a href="#contact">Demandez une consultation gratuite</a>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Témoignages</h2>
-            </div>
-            <div class="testimonial">
-                <p>"Grâce à Zied, notre entreprise a pu moderniser ses systèmes d'information et améliorer significativement notre efficacité opérationnelle."</p>
-                <p class="author">- Témoignage anonyme</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact</h2>
-            </div>
-            <form class="contact-form" method="post" action="https://formspree.io/YOUR_FORM_ID">
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="email" placeholder="Votre email" required>
-                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Zied Torkhani</span>
+      <a href="en/" hreflang="en" lang="en">Read in English</a>
+    </div>
+  </footer>
 </body>
-
 </html>
