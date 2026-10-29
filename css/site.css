@@ -396,3 +396,97 @@ footer a { color: var(--muted); }
   .top nav, .route, .skip { display: none; }
   body { background: #fff; color: #000; }
 }
+
+/* Blogue */
+
+.posts { margin: 0; padding: 0; list-style: none; }
+.posts > li + li { margin-top: 2rem; }
+.posts time { display: block; font-size: 0.875rem; color: var(--muted); }
+.posts h3 {
+  margin: 0.15rem 0 0;
+  font-family: var(--display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.posts h3 a { text-decoration-color: var(--rule); }
+.posts p { margin: 0.35rem 0 0; color: var(--muted); }
+.more { margin: 1.75rem 0 0; font-size: 0.9375rem; }
+
+.post-head {
+  max-width: 46rem;
+  padding-block: clamp(2.5rem, 7vw, 5rem) clamp(2rem, 5vw, 3rem);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+.post-head h1 {
+  margin: 0.5rem 0 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.3rem, 6vw, 3.9rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.post-meta { margin: 0; font-size: 0.875rem; color: var(--muted); }
+.post-meta a { color: var(--brass); text-decoration: none; }
+.post-lede {
+  margin: 1.25rem 0 0;
+  max-width: 40rem;
+  font-family: var(--display);
+  font-size: clamp(1.25rem, 2.6vw, 1.5rem);
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.prose { max-width: 40rem; font-size: 1.125rem; line-height: 1.7; }
+.prose h2 {
+  margin: 2.75rem 0 0.75rem;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(1.7rem, 3.4vw, 2.1rem);
+  line-height: 1.15;
+}
+.prose p, .prose ul, .prose ol { margin: 0 0 1.1rem; }
+.prose li + li { margin-top: 0.4rem; }
+.prose li::marker { color: var(--brass); }
+.prose blockquote {
+  margin: 1.75rem 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 1px solid var(--brass);
+  font-family: var(--display);
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+.prose blockquote p { margin: 0; }
+.prose em { font-style: italic; }
+
+.chart { margin: 2rem 0 1rem; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .grid line { stroke: var(--rule); stroke-width: 1; }
+.chart .axis { stroke: var(--muted); stroke-width: 1; }
+.chart text { fill: var(--muted); font-family: var(--text); font-size: 13px; }
+.chart .axis-title { font-size: 13px; }
+.chart .curve { fill: none; stroke: var(--brass); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart .point circle { fill: var(--brass); stroke: var(--paper); stroke-width: 2; }
+.chart .label text { fill: var(--ink); font-size: 14px; font-weight: 600; }
+.chart figcaption { margin-top: 0.75rem; font-size: 0.9375rem; color: var(--muted); }
+
+.data {
+  width: 100%;
+  margin: 0 0 2rem;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+}
+.data caption { text-align: left; color: var(--muted); padding-bottom: 0.4rem; font-size: 0.875rem; }
+.data th, .data td { text-align: left; padding: 0.45rem 0; border-bottom: 1px solid var(--rule); }
+.data th { font-weight: 600; }
+
+.post-foot {
+  max-width: 40rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9375rem;
+}

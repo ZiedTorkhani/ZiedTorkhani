@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Blogue de Zied Torkhani</title>
+    <link>https://ziedtorkhani.github.io/blogue/</link>
+    <description>Planification industrielle et aide à la décision, expliquées simplement.</description>
+    <language>fr-CA</language>
+    <item>
+      <title>Votre usine joue à Tetris : pourquoi une usine pleine est toujours en retard</title>
+      <link>https://ziedtorkhani.github.io/blogue/usine-tetris-utilisation/</link>
+      <guid>https://ziedtorkhani.github.io/blogue/usine-tetris-utilisation/</guid>
+      <pubDate>Thu, 29 Oct 2026 08:00:00 +0000</pubDate>
+      <description>Plus une machine approche 100 % de charge, plus les délais explosent. La loi de Factory Physics derrière ce constat, et ce qu&#x27;elle change pour planifier.</description>
+    </item>
+  </channel>
+</rss>

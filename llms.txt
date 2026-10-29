@@ -21,8 +21,15 @@
 - [Développement d'algorithmes dynamiques et stochastiques pour le problème de transport de patients dans les hôpitaux](https://core.ac.uk/download/521139015.pdf) : mémoire de maîtrise, Zied Torkhani, Université Laval, 2022
 - [Healthcare Dynamic and Stochastic Transportation](https://www.cirrelt.ca/documentstravail/cirrelt-2023-32.pdf) : document de travail CIRRELT-2023-32, septembre 2023, Imadeddine Aziez, Zied Torkhani, Jean-François Côté, Paolo Landa, Leandro C. Coelho (DOI 10.2139/ssrn.4622857)
 
+## Blogue
+
+<!-- BLOGUE:debut -->
+- [Votre usine joue à Tetris : pourquoi une usine pleine est toujours en retard](https://ziedtorkhani.github.io/blogue/usine-tetris-utilisation/) : Plus une machine approche 100 % de charge, plus les délais explosent. La loi de Factory Physics derrière ce constat, et ce qu'elle change pour planifier. (2026-10-29)
+<!-- BLOGUE:fin -->
+
 ## Liens
 
 - [Site (français)](https://ziedtorkhani.github.io/)
 - [Site (English)](https://ziedtorkhani.github.io/en/)
+- [Blogue](https://ziedtorkhani.github.io/blogue/) et [flux RSS](https://ziedtorkhani.github.io/blogue/flux.xml)
 - [LinkedIn](https://www.linkedin.com/in/zied-torkhani/)

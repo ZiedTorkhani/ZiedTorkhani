@@ -12,4 +12,12 @@
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://ziedtorkhani.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ziedtorkhani.github.io/en/"/>
   </url>
+  <url>
+    <loc>https://ziedtorkhani.github.io/blogue/</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://ziedtorkhani.github.io/blogue/usine-tetris-utilisation/</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
 </urlset>
