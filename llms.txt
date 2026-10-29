@@ -1,0 +1,29 @@
+# Zied Torkhani
+
+> Zied Torkhani (nom complet : Mohamed Zied Torkhani) est gestionnaire de l'excellence organisationnelle chez Soleno inc., fabricant québécois de solutions de gestion des eaux pluviales. Il est spécialiste en excellence organisationnelle et en aide à la décision pour le secteur manufacturier québécois. Il combine une formation en recherche opérationnelle (M.Sc., Université Laval) et une expérience terrain en systèmes de gestion (ERP, CRM, WMS) et en analyse de données. Région : Grand Montréal (Rive-Sud), Québec, Canada. Langues : français, anglais, arabe.
+
+## Parcours
+
+- Depuis octobre 2025 : gestionnaire de l'excellence organisationnelle, Soleno inc. (aide à la décision auprès de la direction, amélioration des processus de bout en bout, indicateurs et tableaux de bord)
+- Mars 2024 à 2025 : analyste d'affaires, Productique Québec
+- Novembre 2023 à mars 2024 : analyste d'affaires, helloDarwin
+- Septembre 2022 à novembre 2023 : analyste logistique, InnovLOG (Institut d'innovation en logistique du Québec)
+- 2019 à 2022 : recherche opérationnelle, Université Laval (stagiaire, auxiliaire de recherche, professionnel de recherche)
+
+## Formation
+
+- M.Sc. en sciences de l'administration, opérations et systèmes de décision (avec mémoire), Université Laval, 2020 à 2022
+- Formation en génie des systèmes industriels et logistiques, École nationale d'ingénieurs de Carthage (Tunisie), 2016 à 2019
+- Formation en analyse d'affaires, niveau ECBA (IIBA), Université Laval et IIBA Québec, 2023
+
+## Publications
+
+- [Développement d'algorithmes dynamiques et stochastiques pour le problème de transport de patients dans les hôpitaux](https://core.ac.uk/download/521139015.pdf) : mémoire de maîtrise, Mohamed Zied Torkhani, Université Laval, 2022
+- [Healthcare Dynamic and Stochastic Transportation](https://www.cirrelt.ca/documentstravail/cirrelt-2023-32.pdf) : document de travail CIRRELT-2023-32, septembre 2023, Imadeddine Aziez, Mohamed Zied Torkhani, Jean-François Côté, Paolo Landa, Leandro C. Coelho (DOI 10.2139/ssrn.4622857)
+
+## Liens
+
+- [Site (français)](https://ziedtorkhani.github.io/)
+- [Site (English)](https://ziedtorkhani.github.io/en/)
+- [LinkedIn](https://www.linkedin.com/in/zied-torkhani/)
+- [GitHub](https://github.com/ZiedTorkhani)
