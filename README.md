@@ -1,5 +1,5 @@
 # Zied Torkhani
 
-Site personnel : https://ziedtorkhani.github.io/
+Ce dépôt redirige vers le site personnel : https://ziedtorkhani.github.io/
 
-HTML et CSS seulement, sans dépendance. Pages : `index.html` (français), `en/index.html` (anglais).
+L'ancien site est conservé dans la branche `archive-ancien-site`.
